@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:720px)" srcset="../images/logos/edimburgotour-newlogo.png">
+            <img src="../images/logos/edinburgh-submark-100px.png" alt="Flowers">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour Classico</a></li>
+                    <li><a href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                    <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                </ul>
+            </li>
+            <li><a href="itinerary.html">Itinerari</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+            <li><a id="active" href="about.html">La Guida</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="paragraph_container" style="background-image: url('../images/others/double-quote.png'); background-position: top left; background-repeat: no-repeat; background-size: 50px 50px;">
+        <h2>Your tour guide</h2>
+        <p>Ciao! Sono Alessandra Gabbi, la tua guida turistica a Edimburgo!</p>
+        <p>Dal 2016 vivo in questa città magica, e da allora non ho mai smesso di innamorarmi delle sue strade, della sua storia… e del suo meteo imprevedibile (preparatevi, qua il sole è timido e la pioggia è fin troppo socievole!). Da buona appassionata di magia, il mio primo tour è stato dedicato a Harry Potter (Serpeverde a rapporto!), ma tranquilli: non mi limito a bacchette e incantesimi. Ho tantissimi tour, tutti diversi e pieni di storie incredibili che vi faranno vedere Edimburgo con occhi nuovi.</p>
+    </div>
+    <div class="paragraph_container">
+        <h2>Your tour guide</h2>
+        <p>Ma non finisce qui: se volete andare oltre Edimburgo, sono pronta a farvi esplorare il resto della Scozia. Vi porterò tra paesaggi mozzafiato, castelli, storie di battaglie epiche e leggende di fantasmi che vi faranno venire i brividi… di entusiasmo, ovviamente! E sappiatelo: non solo vi innamorerete di questa terra, ma magari anche un po’ di me. Succede, non giudico.</p>
+        <p>Quindi, che dite? Vi va di vivere un’avventura unica, divertente e con una guida che ama il suo lavoro (forse pure troppo)? Non vedo l’ora di conoscervi e di farvi scoprire questa meravigliosa terra!
+        </p>
+        <p>Perché scegliere Edimburgo Tour? Perché con me non farete il classico tour "cammina e ascolta". Io mi diverto tanto quanto voi (forse anche di più), vi racconto aneddoti che non trovate sui libri e vi porto a scoprire gli angoli più belli e misteriosi di questa città. Per me, ogni tour è un mix di cultura, risate e magia… e vi assicuro che alla noia è stato già vietato l’accesso!</p>
+        <br>
+        <p><a href="mailto:edinbourghtour@gmail.com">Hai una domanda? Scrivimi <i class="fa-solid fa-arrow-right"></i></a></p>
+    </div>
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/logos/edimburgotour-newlogo.png" alt="">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <p><i class="fa-solid fa-phone"></i> +44 (0) 7360199145</p>
+            <a href="mailto:edinbourghtour@gmail.com"><i class="fa-solid fa-envelope"></i> Edinbourghtour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

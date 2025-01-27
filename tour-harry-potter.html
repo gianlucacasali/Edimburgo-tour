@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:720px)" srcset="../images/logos/edimburgotour-newlogo.png">
+            <img src="../images/logos/edinburgh-submark-100px.png" alt="Flowers">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a id="active" href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour Classico</a></li>
+                    <li><a href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                    <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                </ul>
+            </li>
+            <li><a href="itinerary.html">Itinerari</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="paragraph_container">
+        <h1>Tour di Harry Potter</h1>
+        <p>Unisciti a noi per un tour tra le strade che hanno ispirato J.K. Rowling nella creazione della saga che ha conquistato il mondo. Scoprirai i luoghi simbolo dove è nata la magia di Harry Potter, immergendoti nell'atmosfera unica della città.</p>
+        <p>Visiterai il suggestivo cimitero di Greyfriars, dove potrai svelare i segreti dietro il nome di Lord Voldemort e conoscere la vera storia della scuola di magia più famosa del mondo.</p>
+        <p>Percorrendo la Old Town, ti sembrerà di passeggiare per Diagon Alley, tra vicoli misteriosi e locali che sembrano usciti direttamente dalle pagine dei libri. Ogni angolo di Edimburgo nasconde sorprese legate al mondo di Harry Potter, pronte a incantarti e stupirti.</p>
+        <p>Non perdere l'occasione di scoprire la città con occhi nuovi: ogni strada, caffetteria e vecchio edificio racconta una storia magica. E se ti trovi davanti a una porta chiusa, ricorda sempre la parola d'ordine: Caput Draconis!</p>
+    </div>
+    <div class="tour_info">
+        <div>
+            <i class="fa-solid fa-sterling-sign"></i>
+            <h3>Prezzi</h3>
+            <p>Adulti <span class="ticket_price">£26,50</span> <span class="ticket_info">dai 16 anni in su</span></p>
+            <p>Bambini <span class="ticket_price">£13,50</span> <span class="ticket_info">dai 2 ai 15 anni</span></p>
+            <p><span class="ticket_info">I prezzi includono i costi di servizio e le tasse.</span></p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <h3>Durata</h3>
+            <p>2h</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Punto d'incontro</h3>
+            <p>253 High St, Edinburgh EH1 1YJ</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Dimensione Gruppo</h3>
+            <p>Max 15 persone</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-hat-wizard"></i>
+            <h3>Guida</h3>
+            <p><i class="fa-solid fa-check"></i> Inclusa</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-gem"></i>
+            <h3>Opzione di combinazione tour <br> £10 a persona aggiuntivi</h3>
+            <p>Tour Harry Potter + Tour Classico</p>
+            <p>Tour Harry Potter + Tour Fantasmi</p>
+        </div>
+    </div>
+
+    <div class="paragraph_container">
+        <h2>Cancellazione</h2>
+        <p>I clienti riceveranno un rimborso completo o un credito in caso di cancellazione con almeno 24 ore di preavviso. I clienti riceveranno anche un rimborso completo o un credito in caso di annullamento da parte dell’operatore dovuto a causa di condizioni meteorologiche o altre circostanze impreviste. I clienti possono cancellare la loro prenotazione online oppure contattarci telefonicamente per annullare o per chiedere informazioni a riguardo. Il no-show verrà addebitato a prezzo intero.</p>
+    </div>
+
+    <!-- CAROUSEL-->
+    <div class="slider">
+        <!-- Slide 1 -->
+        <div class="myslide fade">
+            <img class="slider_img" src="../images/harry-potter-tour/victoria-street.jpg" alt="image of the interior of Edinburgh Castle">
+        </div>
+        <!-- Slide 2 -->
+
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </a>
+        <!-- Pagination -->
+        <div class="dotsbox" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/logos/edimburgotour-newlogo.png" alt="">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <p><i class="fa-solid fa-phone"></i> +44 (0) 7360199145</p>
+            <a href="mailto:edinbourghtour@gmail.com"><i class="fa-solid fa-envelope"></i> Edinbourghtour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

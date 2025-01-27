@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:720px)" srcset="../images/logos/edimburgotour-newlogo.png">
+            <img src="../images/logos/edinburgh-submark-100px.png" alt="Flowers">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour della città vecchia</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Itinerario</a></li>
+            <li><a href="galleria.html">Gallera</a></li>
+            <li><a id="active" href="recensioni.html">Recensioni</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="grid_container review">
+        <article class="card review_small frame" >
+            
+                <iframe class="myFrame" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarisa.virtu%2Fposts%2Fpfbid0RSiUNYJ21FRMCp5sv6EHtXSogr3ndAxPkJaGAvMjwi9MeiHXd6tRs5eFJLnLyD1Vl&show_text=true&width=500" width="500" height="282" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            
+        </article>
+        <article class="card review_large" >
+
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarilena.vecchio.33%2Fposts%2Fpfbid0FewHXDpjoqscY1tbQiu5M9vo6PnMfXqdpbkKLBVmvhq9YE7w21PRfzJCyx4k2Jcdl&width=320&show_text=false&height=663&appId" data-width=""  height="663" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_large" >
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmariella.nazzaro%2Fposts%2Fpfbid0K8yHMogntqXYfeNe3jC5M3cBqCFBmSr4jquNToM8P5jgZ5zqDGpjE3PfFYK9yVKLl&show_text=true&width=500" width="500" height="751" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_large" >
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fclaudia.valeri.96%2Fposts%2Fpfbid02UqWe9m4qLFzJgnqpHPKxaFfb1U5A4SrNUM4d71nHBSgSqo936jZAsTo2A3ay46Zgl&show_text=true&width=500" width="500" height="827" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" >
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farianna.alberti.3%2Fposts%2Fpfbid02YwoozkFyCP41Hx8uCtPxMQdH8Z1kaYP1vMFFxZrbc9FJ2mt5Q5hgkkJnqX7XVsDgl&show_text=true&width=500" width="500" height="225" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" >
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Florenzo.cini.54%2Fposts%2Fpfbid02eRcGXGu2uxnXK1J1SCUCxKbzEMQS9khdhfvPMUegFFjKc2GGmojd4FDedUfFhXwKl&show_text=true&width=500" width="500" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" >
+            <a href="https://www.getyourguide.com/edinburgh-l44/tour-classico-della-old-town-t669949/?ranking_uuid=c8abc5cc-48e2-4731-9eb9-7822aa984cc7" target="_blank" title="Go to GetYourGuide website">
+                <img style="width:500px; object-fit: contain" src="../images/reviews/17-december-24.png" alt="">
+            </a>
+        </article>
+        <article class="card review_small" >
+            <a href="https://www.getyourguide.com/edinburgh-l44/tour-dei-fantasmi-a-edimburgo-t679559/?ranking_uuid=c8abc5cc-48e2-4731-9eb9-7822aa984cc7" target="_blank" title="Go to GetYourGuide website">
+                <img style="width:500px; object-fit: contain" src="../images/reviews/21-august-24.png" alt="">
+            </a>
+        </article>
+        <!-- <article class="card review_small" style="background-image: url('../images/castle-tour/castle-inside.jpg'); background-size: cover;">
+            <div class="frame">
+                <iframe class="myFrame" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarisa.virtu%2Fposts%2Fpfbid0RSiUNYJ21FRMCp5sv6EHtXSogr3ndAxPkJaGAvMjwi9MeiHXd6tRs5eFJLnLyD1Vl&show_text=true&width=500" width="500" height="282" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </article>
+        <article class="card review_large" style="background-image: url('../images/gallery/panorama-vertical.jpg'); background-size: cover;">
+            <div class="frame">
+                <iframe class="myFrame" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarilena.vecchio.33%2Fposts%2Fpfbid02KF5xmAh7HxDTtPn6EzqGBDNT7prkpnvWCNddRYQhpWTTtztPW52pXiembMFrK47zl&show_text=true&width=500" width="500" height="732" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </article>
+        <article class="card review_large" style="background-image: url('../images/gallery/st-mary-vertical.jpg'); background-size: cover;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmariella.nazzaro%2Fposts%2Fpfbid0K8yHMogntqXYfeNe3jC5M3cBqCFBmSr4jquNToM8P5jgZ5zqDGpjE3PfFYK9yVKLl&show_text=true&width=500" width="500" height="751" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_large" style="background-image: url('../images/gallery/circus-lane-vertical.jpg'); background-size: cover;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fclaudia.valeri.96%2Fposts%2Fpfbid02UqWe9m4qLFzJgnqpHPKxaFfb1U5A4SrNUM4d71nHBSgSqo936jZAsTo2A3ay46Zgl&show_text=true&width=500" width="500" height="827" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" style="background-image: url('../images/gallery/dean-village-horizontal.jpg'); background-size: cover;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Farianna.alberti.3%2Fposts%2Fpfbid02YwoozkFyCP41Hx8uCtPxMQdH8Z1kaYP1vMFFxZrbc9FJ2mt5Q5hgkkJnqX7XVsDgl&show_text=true&width=500" width="500" height="225" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" style="background-image: url('../images/gallery/old-town-horizontal.jpg'); background-size: cover;">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Florenzo.cini.54%2Fposts%2Fpfbid02eRcGXGu2uxnXK1J1SCUCxKbzEMQS9khdhfvPMUegFFjKc2GGmojd4FDedUfFhXwKl&show_text=true&width=500" width="500" height="168" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </article>
+        <article class="card review_small" style="background-image: url('../images/ghost-tour/greyfriars-covenants.jpg'); background-size: cover;">
+            <a href="https://www.getyourguide.com/edinburgh-l44/tour-classico-della-old-town-t669949/?ranking_uuid=c8abc5cc-48e2-4731-9eb9-7822aa984cc7" target="_blank" title="Go to GetYourGuide website">
+                <img style="width:500px; object-fit: contain" src="../images/reviews/17-december-24.png" alt="">
+            </a>
+        </article>
+        <article class="card review_small" style="background-image: url('../images/gallery/edinburgh-skyline.jpg'); background-size: cover;">
+            <a href="https://www.getyourguide.com/edinburgh-l44/tour-dei-fantasmi-a-edimburgo-t679559/?ranking_uuid=c8abc5cc-48e2-4731-9eb9-7822aa984cc7" target="_blank" title="Go to GetYourGuide website">
+                <img style="width:500px; object-fit: contain" src="../images/reviews/21-august-24.png" alt="">
+            </a>
+        </article> -->
+    </div>
+    <div style="width:100px; overflow: hidden;">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarilena.vecchio.33%2Fposts%2Fpfbid0FewHXDpjoqscY1tbQiu5M9vo6PnMfXqdpbkKLBVmvhq9YE7w21PRfzJCyx4k2Jcdl&width=320&show_text=false&height=663&appId" width="500" height="663" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/logos/edimburgotour-newlogo.png" alt="">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <p><i class="fa-solid fa-phone"></i> +44 (0) 7360199145</p>
+            <a href="mailto:edinbourghtour@gmail.com"><i class="fa-solid fa-envelope"></i> Edinbourghtour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+
+</body>
+</html>

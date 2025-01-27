@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:720px)" srcset="../images/logos/edimburgotour-newlogo.png">
+            <img src="../images/logos/edinburgh-submark-100px.png" alt="Flowers">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a  href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a id="active" href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour Classico</a></li>
+                    <li><a href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                    <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                </ul>
+            </li>
+            <li><a href="itinerary.html">Itinerari</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="paragraph_container">
+        <h1>Tour dei fantasmi di Edimburgo</h1>
+        <p>Edimburgo, con la sua storia avvolta da misteri e tragedie, è un luogo dove il passato sembra ancora sussurrare tra le antiche mura e le strade acciottolate. La capitale scozzese, segnata nei secoli da battaglie sanguinose, pestilenze devastanti e personaggi inquietanti, conserva ancora oggi le memorie di quei giorni oscuri.</p>
+        <p>Partecipa al nostro Ghost Tour e lasciati guidare attraverso le storie più inquietanti della città! Esplorerai i luoghi dove si sono consumati eventi drammatici e misteriosi, rivivendo i momenti più cruenti della storia scozzese. Se sarai abbastanza coraggioso, potresti persino percepire i lamenti degli antichi spettri che ancora vagano nell’ombra…</p>
+        <p>Edimburgo è ricca di leggende e racconti legati a presenze soprannaturali: segrete infestate nel Castello, eco di voci dimenticate, ombre che si aggirano tra noi, e persino i fantasmi di bambini e antichi ladri di cadaveri che ancora non trovano pace.</p>
+        <p>Sapevi che la città è suddivisa in tre livelli paranormali? Durante questo tour, ti condurremo proprio nel luogo che registra la più alta concentrazione di fenomeni inspiegabili. Preparati a un’esperienza indimenticabile tra mito, storia e… presenze misteriose!</p>
+    </div>
+    <div class="tour_info">
+        <div>
+            <i class="fa-solid fa-sterling-sign"></i>
+            <h3>Prezzi</h3>
+            <p>Adulti <span class="ticket_price">£26,50</span> <span class="ticket_info">dai 16 anni in su</span></p>
+            <p>Bambini <span class="ticket_price">£13,50</span> <span class="ticket_info">dai 2 ai 15 anni</span></p>
+            <p><span class="ticket_info">I prezzi includono i costi di servizio e le tasse.</span></p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <h3>Durata</h3>
+            <p>2h</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Punto d'incontro</h3>
+            <p>354 Castlehill, Edinburgh EH1 2NE</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Dimensione Gruppo</h3>
+            <p>Max 15 persone</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-hat-wizard"></i>
+            <h3>Guida</h3>
+            <p><i class="fa-solid fa-check"></i> Inclusa</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-gem"></i>
+            <h3>Opzione di combinazione tour <br> £10 a persona aggiuntivi</h3>
+            <p>Tour Fantasmi + Tour Classico</p>
+            <p>Tour Fantasmi + Tour Harry Potter</p>
+        </div>
+    </div>
+
+    <div class="paragraph_container">
+        <h2>Cancellazione</h2>
+        <p>I clienti riceveranno un rimborso completo o un credito in caso di cancellazione con almeno 24 ore di preavviso. I clienti riceveranno anche un rimborso completo o un credito in caso di annullamento da parte dell’operatore dovuto a causa di condizioni meteorologiche o altre circostanze impreviste. I clienti possono cancellare la loro prenotazione online oppure contattarci telefonicamente per annullare o per chiedere informazioni a riguardo. Il no-show verrà addebitato a prezzo intero.</p>
+    </div>
+
+    <!-- CAROUSEL-->
+    <div class="slider">
+        <!-- Slide 1 -->
+        <div class="myslide fade">
+            <img class="slider_img" src="../images/ghost-tour/greyfriars.jpg" alt="image of the interior of Edinburgh Castle">
+        </div>
+        <!-- Slide 2 -->
+        <div class="myslide fade">
+            <img class="slider_img" src="../images/ghost-tour/greyfriars-covenants.jpg" alt="image of the interior of Edinburgh Castle">
+        </div>
+
+        <!-- Navigation Arrows -->
+        <!-- Feel free to replace the navigation icons here -->
+        <a class="prev" onclick="plusSlides(-1)">
+            <i class="bx bx-chevron-left"></i>
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <i class="bx bx-chevron-right"></i>
+        </a>
+        <!-- Pagination -->
+        <div class="dotsbox" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/logos/edimburgotour-newlogo.png" alt="">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <p><i class="fa-solid fa-phone"></i> +44 (0) 7360199145</p>
+            <a href="mailto:edinbourghtour@gmail.com"><i class="fa-solid fa-envelope"></i> Edinbourghtour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
