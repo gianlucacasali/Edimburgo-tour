@@ -255,9 +255,13 @@ header
 {
     .dropdown:hover .dropdown_menu
     {
-        height: 0 !important;
-        opacity: 0 !important;
-        transform: translateY(0) !important;
+        position: static;
+        height: auto;
+        opacity: 1;
+        box-shadow: none;
+        transform: translate(-30px, 5px) !important;
+        width: 320px;
+        background: transparent;
     }
 }
 
