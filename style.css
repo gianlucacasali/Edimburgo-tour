@@ -171,7 +171,7 @@ header
     background-color: var(--cl-background);
     top: 98%;
     left: -100%;
-    min-width: 400px;
+    width: 400px;
     height: 0;
 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -186,7 +186,7 @@ header
 
 .dropdown_menu li
 {
-    padding: 0.5em 0.2em;
+    padding: 0.3em 1.5em;
 }
 
 .dropdown:hover .dropdown_menu {
@@ -213,12 +213,10 @@ header
         gap: 0.5rem !important;
         position: absolute;
         z-index: 2;
-        max-width: 300px;
-        width: 100%;
-        height: 600px;
+        width: 320px;
         top: 0;
-        right: 0;
-        padding: 3em 1em 2em;
+        right: 5px;
+        padding: 8em 0 2em;
         background: var(--cl-background);
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(10px);
@@ -258,7 +256,7 @@ header
         position: static;
         text-align: center;
     }
-    
+
     .dropdown:hover .dropdown_menu
     {
         position: static;
