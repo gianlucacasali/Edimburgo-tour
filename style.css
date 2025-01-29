@@ -257,8 +257,7 @@ header
         text-align: center;
     }
 
-    .dropdown:hover .dropdown_menu
-    {
+    .navbar_container  .dropdown_menu {
         position: static;
         height: auto;
         opacity: 1;
@@ -266,6 +265,8 @@ header
         transform: translate(-30px, 5px) !important;
         width: 320px;
         background: transparent;
+        /*top: -20%;
+        left: -340%;*/
     }
 }
 
