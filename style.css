@@ -253,6 +253,12 @@ header
 
 @media (pointer: coarse)
 {
+    .dropdown
+    {
+        position: static;
+        text-align: center;
+    }
+    
     .dropdown:hover .dropdown_menu
     {
         position: static;
