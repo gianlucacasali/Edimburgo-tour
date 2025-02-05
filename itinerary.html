@@ -41,7 +41,34 @@
         </ul>
     </nav>
 </header>
+<main>
+    <form id="form" class="contact" data-netlify="true" onSubmit="submit"></form>
+        <input type="hidden" name="access_key" value="1563f681-fb33-4389-a404-322d3eae0712">
+        <input type="hidden" name="from_name" value="Edimburgo Tour">
+        <input type="hidden" name="subject"/>
 
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="start-date">Start Date:</label>
+        <input type="text" id="start-date" name="start-date" placeholder="dd/mm/yy" required><br><br>
+
+        <label for="end-date">End Date:</label>
+        <input type="text" id="end-date" name="end-date" placeholder="dd/mm/yy" required><br><br>
+
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" name="num-guests" min="1" required><br><br>
+
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <div id="result"></div>
+    </form>
+</main>
 <footer>
     <div class="logo">
         <img src="../images/logos/edimburgotour-newlogo.png" alt="">
