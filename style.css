@@ -314,9 +314,14 @@ input[type=submit]:hover
 {
     max-height: 800px;
     overflow: hidden;
+    display: block;
 }
 
-.wrap {flex-wrap: wrap;}
+.wrap 
+{ 
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .opacity {opacity: 0.2;}
 
