@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar_container">
+            <a class="navbar_logo" href="index.html"><picture>
+                <source  media="(min-width:750px)" srcset="../images/opt-images/logos-opt/edimburgotour-logo.png">
+                <img src="../images/opt-images/logos-opt/edinburgh-submark-80px.png" alt="Edimburgo Tour Logo">
+            </picture></a>
+            <button class="navbar_toggle" onclick="openNavbar()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar_menu">
+                <li><a id="active"  href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="tours.html">Tours</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="tour-castello.html">Tour del Castello</a></li>
+                        <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                        <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                        <li><a href="tour-classico.html">Tour Classico</a></li>
+                        <li><a href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                        <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                    </ul>
+                </li>
+                <li><a href="itinerary.html">Itinerari</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="about.html">La Guida</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Carousel -->
+        <div class="slider overlay">
+            <!-- Slide 1 -->
+            <div class="myslide fade">
+                <div class="txt">
+                    <h2>Castello di Edinburgo</h2>
+                    <p class="slider_description">Arroccato su un’imponente roccia vulcanica, il Castello di Edimburgo domina la città con il suo fascino medievale e la sua storia intrisa di battaglie e leggende. Un tempo residenza reale e fortezza inespugnabile, oggi custodisce i Gioielli della Corona scozzese. Dai bastioni, lo sguardo spazia su Edimburgo, mentre ogni giorno, puntuale, il One O’Clock Gun risuona tra le antiche mura, riportando in vita le tradizioni scozzesi.</p>
+                    <a href="tours.html">Explore our tours <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/castle-tour/castle-wide-view.jpg" alt="image of Edinburgh Castle taken by Princes Gardens">
+            </div>
+            <!-- Slide 2 -->
+            <div class="myslide fade">
+                <div class="txt">
+                    <h2>Victoria Street</h2>
+                    <p class="slider_description">Victoria Street, nel cuore di Edimburgo, è una delle strade più pittoresche della città. Con le sue facciate colorate, i negozi unici e la caratteristica curva in salita, è un luogo imperdibile per visitatori e appassionati di fotografia.</p>
+                    <a href="tours.html">Explore our tours <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/harry-potter-tour/victoria-street.jpg" alt="image of Victoria Street, Edinburgh">
+            </div>
+            <!-- Slide 3 -->
+            <div class="myslide fade">
+                <div class="txt">
+                    <h2>Cimitero di Greyfriars</h2>
+                    <p class="slider_description">Greyfriars è uno dei luoghi più affascinanti di Edimburgo, avvolto da storia, leggende e un pizzico di mistero. Celebre per il suo antico cimitero e per la commovente storia di Greyfriars Bobby, il cane che vegliò sulla tomba del padrone per anni, questo angolo della città nasconde segreti secolari, storie di fantasmi e un’atmosfera unica tutta da scoprire.</p>
+                    <a href="tours.html">Explore our tours <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/ghost-tour/greyfriars-covenants.jpg" alt="image of Greyfriars Kirkyard Cemetery">
+            </div>
+            <div class="myslide fade">
+                <div class="txt">
+                    <h2>Città Vecchia</h2>
+                    <p class="slider_description">La Città Vecchia di Edimburgo, cuore storico della capitale scozzese, è un affascinante labirinto di strade medievali, vicoli nascosti e monumenti iconici. Dominata dal maestoso Castello di Edimburgo, offre un viaggio nel tempo tra storia, cultura e tradizioni scozzesi.</p>
+                    <a href="tours.html">Explore our tours <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/old-town-tour/old-town-wide-view.jpg" alt="image of the Old Town taken from Princes Street">
+            </div>
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+            <!-- Pagination -->
+            <div class="dotsbox" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="paragraph_container extra_margin">
+            <h1>"La Scozia non è solo un luogo geografico, ma uno stato d'animo."</h1>
+            <p>Benvenuti in Scozia, terra di paesaggi mozzafiato e storia affascinante.
+                Offriamo servizi di viaggi personalizzati, viaggi di gruppo e tour privati per farvi scoprire
+                il meglio di questa meravigliosa nazione.
+                Esplorate castelli maestosi, Highlands verdeggianti e città storiche con il comfort e la comodità che meritate.
+                Le nostre guide esperte arricchiranno ogni tappa con storie e aneddoti coinvolgenti.
+                Scegliete tra viaggi personalizzati per un itinerario su misura,
+                viaggi di gruppo per nuove amicizie e avventure condivise, o tour privati per un'esperienza esclusiva e su misura.
+                Venite a vivere la magia della Scozia con noi. Ogni passo sarà un'avventura indimenticabile.</p>
+        </div>
+
+        <div class="business_card extra_margin">
+            <div class="business_card_img">
+                <img src="../images/opt-images/tour-guide-opt/alessandra-castle-opt.jpg" alt="image of Alessandra Gabbi">
+            </div>
+            <div class="business_card_info">
+                <h2>La Tua Guida</h2>
+                <p>Conosci Alessandra Gabbi, una guida turistica certificata con una profonda passione per la storia scozzese! Alessandra ha trascorso anni esplorando i castelli, i campi di battaglia e il folklore della Scozia. La sua narrazione coinvolgente, la sua conoscenza della ricca storia della Scozia e la sua personalità calorosa rendono ogni tour un viaggio indimenticabile nel tempo. Che tu stia esplorando antiche rovine o scoprendo leggende nascoste, Alessandra dà vita alla storia con entusiasmo e intuizione.</p>
+                <br>
+                <p><a href="about.html">Conoscimi meglio <i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+
+        <div class="paragraph_container extra_margin">
+            <h2>Esplora la Scozia con Edimburgo Tour: Esperienze Uniche e Indimenticabili</h2>
+            <p>Benvenuti nel mondo di Edimburgo Tour, il piccolo tour operator scozzese che trasforma ogni viaggio in un’avventura unica. I nostri tour sono curati con passione e attenzione ai dettagli, progettati per farti vivere il cuore e l’anima della Scozia. Dalla bellezza selvaggia delle Highlands alle strade intrise di storia del Centro Storico di Edimburgo, c’è qualcosa di speciale per ogni tipo di viaggiatore.
+            </p>
+            <p>Questi sono solo alcuni dei nostri servizi, tutti completamente personalizzabili in base ai tuoi interessi, al tempo a disposizione e al tuo stile di viaggio.
+            </p>
+            <!-- style="display: flex; padding: 0.5em; gap: 10px; margin: 2em 0;" -->
+            <ul>
+                <li><span class="accent-color">Tour Storici a Piedi</span><br> Cammina tra vicoli medievali, castelli maestosi e antichi campi di battaglia. Conosci le storie affascinanti di re, guerrieri e personaggi indimenticabili che hanno plasmato la Scozia. Un viaggio nel tempo… direttamente con i tuoi piedi!</li>
+                <li><span class="accent-color">Avventure nelle Highlands</span><br> Prepara la macchina fotografica: ti porteremo in luoghi da togliere il fiato! Da Glencoe a Loch Ness, passando per antiche rovine e panorami che sembrano usciti da una cartolina, le Highlands non smetteranno mai di stupirti.</li>
+                <li><span class="accent-color">Leggende e Folklore Scozzese</span><br> Vuoi scoprire i misteri più oscuri e le storie di fantasmi che ancora oggi popolano i racconti scozzesi? Dai miti celtici alle leggende di creature magiche, questo tour ti farà immergere nel lato più magico e misterioso del paese.</li>
+            </ul>
+            <p>Ogni esperienza è arricchita da storie uniche, approfondimenti affascinanti e un pizzico di umorismo che renderà il tuo viaggio davvero memorabile. Puoi scegliere uno dei nostri itinerari classici o lavorare con noi per creare un tour su misura, perfetto per te.</p>
+            <p>Che tu sia un appassionato di storia, un amante della natura o un cacciatore di leggende, con Edimburgo Tour troverai l’avventura perfetta. Sei pronto a innamorarti della Scozia? Noi siamo qui per mostrarti il meglio!</p>
+        </div>
+
+        <div class="slider overlay direction">
+            <div class="col-3">
+                <div class="txt">
+                    <h2>Tour storici a piedi</h2>
+                    <br>
+                    <a href="tour-castello.html">Scopri i tuor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/opt-images/old-town-tour-opt/old-town-close-opt.jpg" alt="image of the Old Town taken from Princes Street">
+            </div>
+            <div class="col-3">
+                <div class="txt">
+                    <h2>Tour di gruppo personalizzati</h2>
+                    <br>
+                    <a href="itinerary.html">Scopri di piu <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/opt-images/gallery-opt/donan-tour-vertical-opt.jpg" alt="image of the Old Town taken from Princes Street">
+
+            </div>
+            <div class="col-3">
+                <div class="txt">
+                    <h2>Avventure nelle highlands</h2>
+                    <br>
+                    <a href="itinerary.html">Mandaci una mail con le tue preferenze<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img class="slider_img opacity" src="../images/opt-images/gallery-opt/Mackenzie-statue-opt.jpg" alt="image of the Old Town taken from Princes Street">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img src="../images/opt-images/logos-opt/edimburgotour-logo.png" alt="image of Edimburgo Tour Logo">
+        </div>
+        <div class="footer_container">
+            <div>
+                <h3>Links Utili</h3>
+                <a href="t&c.html">Termini e condizioni</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="contact_details">
+                <h3>Contatti</h3>
+                <!--<a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png"/><a/>-->
+                <a href="https://wa.me/+447360199145"><i class="fa-brands fa-whatsapp"></i> +44 (0) 7360199145</a>
+                <a href="mailto:edinbourghtour@gmail.com"> <i class="fa-solid fa-envelope"></i>edimburgotour@gmail.com</a>
+            </div>
+            <div class="social-list">
+                <h3>Social Media</h3>
+                <a href="https://www.facebook.com/edimburgotour" target="_blank" class="social-link"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/edimburgotourltd/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/edimburgo-tour-ltd/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+            <p>Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+            <p>Website designed by <i>Gianluca Casali</i></p>
+            <p>Photographes courtesy of <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:750px)" srcset="../images/opt-images/logos-opt/edimburgotour-logo.png">
+            <img src="../images/opt-images/logos-opt/edinburgh-submark-80px.png" alt="Edimburgo Tour Logo">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour Classico</a></li>
+                    <li><a id="active" href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                    <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                </ul>
+            </li>
+            <li><a href="itinerary.html">Itinerari</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="about.html">La Guida</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="paragraph_container">
+        <h1>Tour della Royal Mile a Edimburgo</h1>
+        <p>Questo tour vi porterà a scoprire gli angoli più affascinanti e nascosti del Royal Mile, la strada più importante di Edimburgo, cuore pulsante della storia della città. Situata nella Old Town, il Royal Mile è la via che ha visto scorrere secoli di eventi cruciali, tra cui intrighi, leggende, amori, e avventure, che hanno plasmato Edimburgo come Capitale della Scozia.</p>
+        <p>Percorrendo questa via iconica, che si estende dal Castello di Edimburgo fino al Palazzo di Holyroodhouse, vi troverete immersi nei luoghi che raccontano le vicende di nobili famiglie, personaggi misteriosi, e leggende di fantasmi. Mentre la strada può sembrare affollata e turistica oggi, dietro ogni angolo si nascondono storie che pochi conoscono.</p>
+        <p>Dimenticate quello che avete letto nelle guide turistiche e preparatevi a vivere la vera Edimburgo! In questo affascinante viaggio alla scoperta dei segreti e dei misteri che rendono il Royal Mile una delle vie più storiche e significative d'Europa.</p>
+        <p>Il tour inizia dalla cima del Royal Mile, proprio di fronte al Castello di Edimburgo. Da questa posizione privilegiata, su una roccia di origine vulcanica che ha protetto la città fin dal IX secolo, il Castello vigila su Edimburgo, testimone di secoli di storia, battaglie e cambiamenti che hanno reso la città ciò che è oggi.</p>
+    </div>
+    <div class="tour_info">
+        <div>
+            <i class="fa-solid fa-sterling-sign"></i>
+            <h3>Prezzi</h3>
+            <p>Adulti <span class="accent-color">£26,50</span> <span class="ticket_info">dai 16 anni in su</span></p>
+            <p>Bambini <span class="accent-color">£13,50</span> <span class="ticket_info">dai 2 ai 15 anni</span></p>
+            <p><span class="sub-color">I prezzi includono i costi di servizio e le tasse.</span></p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <h3>Durata</h3>
+            <p>2h</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Punto d'incontro</h3>
+            <p>354 Castlehill, Edinburgh EH1 2NE</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Dimensione Gruppo</h3>
+            <p>Max 15 persone</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-hat-wizard"></i>
+            <h3>Guida</h3>
+            <p><i class="fa-solid fa-check"></i> Inclusa</p>
+        </div>
+    </div>
+
+    <div class="paragraph_container">
+        <h2>Cancellazione</h2>
+        <p>I clienti riceveranno un rimborso completo o un credito in caso di cancellazione con almeno 24 ore di preavviso. I clienti riceveranno anche un rimborso completo o un credito in caso di annullamento da parte dell’operatore dovuto a causa di condizioni meteorologiche o altre circostanze impreviste. I clienti possono cancellare la loro prenotazione online oppure contattarci telefonicamente per annullare o per chiedere informazioni a riguardo. Il no-show verrà addebitato a prezzo intero.</p>
+    </div>
+
+
+    <div class="slider">
+        <div>
+            <img class="slider_img" src="../images/opt-images/old-town-tour-opt/royal-mile-opt.jpg" alt="image of the Royal Mile in Edinburgh">
+        </div>
+
+    </div>
+
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/opt-images/logos-opt/edimburgotour-logo.png" alt="image of Edimburgo Tour Logo">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <!--<a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png"/><a/>-->
+            <a href="https://wa.me/+447360199145"><i class="fa-brands fa-whatsapp"></i> +44 (0) 7360199145</a>
+            <a href="mailto:edinbourghtour@gmail.com"> <i class="fa-solid fa-envelope"></i>edimburgotour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com/edimburgotour" target="_blank" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/edimburgotourltd/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/edimburgo-tour-ltd/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+        <p>Photographes courtesy of <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

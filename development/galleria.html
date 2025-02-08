@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_io/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Edinburgh Tour</title>
+</head>
+<body>
+<header>
+    <nav class="navbar_container">
+        <a class="navbar_logo" href="index.html"><picture>
+            <source  media="(min-width:750px)" srcset="../images/opt-images/logos-opt/edimburgotour-logo.png">
+            <img src="../images/opt-images/logos-opt/edinburgh-submark-80px.png" alt="Edimburgo Tour Logo">
+        </picture></a>
+        <button class="navbar_toggle" onclick="openNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar_menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tours.html">Tours</a>
+                <ul class="dropdown_menu">
+                    <li><a href="tour-castello.html">Tour del Castello</a></li>
+                    <li><a href="tour-harry-potter.html">Tour di Harry Potter</a></li>
+                    <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
+                    <li><a href="tour-classico.html">Tour Classico</a></li>
+                    <li><a href="tour-royal-mile.html">Tour della Royal Mile</a></li>
+                    <li><a href="tour-outlander.html">Tour di Outlander</a></li>
+                </ul>
+            </li>
+            <li><a href="itinerary.html">Itinerari</a></li>
+            <li><a id="active" href="galleria.html">Galleria</a></li>
+            <li><a href="about.html">La Guida</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="grid_container">
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/castle-tour-horizontal-opt.jpg" alt="image of a touring group with the castle in background">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/glencoe-tour-horizontal-opt.jpg" alt="image of a group of friends in tour in the highlands">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/greyfriars-tour-vertical-opt.jpg" alt="image of the guide and her clients with bobby's statue in the background">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/st-giles-vertical-opt.jpg" alt="image of St Giles interior">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/st-mary-vertical-opt.jpg" alt="image of St Mary from the outside">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/highlands-tour-vertical-opt.jpg" alt="image of the group tuoring the highlands">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/3-sisters-tour-horizontal-opt.jpg" alt="image of a group touring Glencoe">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/another-castle-tour-vertical-opt.jpg" alt="image of a group with a castle in the background">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/mosaic-horizontal-opt.jpg" alt="image of a glass mosaic">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/boat-tour-vertical-opt.jpg" alt="image of a group on a boat touring the north">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/bobby-tour-horizontal-opt.jpg" alt="image of a couple and bobby's statue">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/old-town-tour-opt/old-town-skyline-opt.jpg" alt="image of the Old Town skyline">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/donan-tour-vertical-opt.jpg" alt="image of a group and castle in the background">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/edi-castle-tour-vertical-opt.jpg" alt="image of a group and the guide at the Edinburgh castle">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/guide-pit-vertical-opt.jpg" alt="image of the guide with a pit">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/lunch-tour-horizontal-opt.jpg" alt="image of a group having lunch with the guide">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/old-bridge-tour-horizontal-opt.jpg" alt="image of the old bridge in Skye">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/pub-tour-horizontal-opt.jpg" alt="image of the pub where Outlander was filmed">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/panorama-vertical-opt.jpg" alt="image of the Old Town">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/tour-horizontal-opt.jpg" alt="selfie of the guide with two clients">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/tour-horizontal%202-opt.jpg" alt="image of a large group with the guide">
+        </article>
+        <article class="vertical">
+            <img src="../images/opt-images/gallery-opt/circus-lane-vertical-opt.jpg" alt="image of Circus Lane in Edinburgh">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/dean-village-horizontal-opt.jpg" alt="image of Dean Village in Edinburgh">
+        </article>
+        <article class="horizontal">
+            <img src="../images/opt-images/gallery-opt/edinburgh-skyline-opt.jpg" alt="image of Edinburgh skyline">
+        </article>
+    </div>
+</main>
+<footer>
+    <div class="logo">
+        <img src="../images/opt-images/logos-opt/edimburgotour-logo.png" alt="image of Edimburgo Tour Logo">
+    </div>
+    <div class="footer_container">
+        <div>
+            <h3>Links Utili</h3>
+            <a href="t&c.html">Termini e condizioni</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="contact_details">
+            <h3>Contatti</h3>
+            <!--<a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png"/><a/>-->
+            <a href="https://wa.me/+447360199145"><i class="fa-brands fa-whatsapp"></i> +44 (0) 7360199145</a>
+            <a href="mailto:edinbourghtour@gmail.com"> <i class="fa-solid fa-envelope"></i>edimburgotour@gmail.com</a>
+        </div>
+        <div class="social-list">
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com/edimburgotour" target="_blank" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/edimburgotourltd/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/edimburgo-tour-ltd/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+        <p >Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
+        <p>Website designed by <i>Gianluca Casali</i></p>
+        <p>Photographes courtesy of <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
