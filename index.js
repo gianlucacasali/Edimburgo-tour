@@ -9,6 +9,13 @@ function openNavbar()
     navbarToggle.classList.toggle('openNavbar')
 }
 
+document.addEventListener('click', function(e){
+    let id = e.target.getAttribute('data-itinerary'); // target the attribute name of the element where the click has appeaned
+    let parent = document.getElementById(id) // get the parent of the element clicked, id will match with attribute
+    let target = parent.querySelector('.itinerary_description') // select the child with the specified class
+    target.classList.toggle('open-itinerary') // toggle the class open-faw 
+})
+
 
 const myslide = document.querySelectorAll('.fade'),
     dot = document.querySelectorAll('.dot');

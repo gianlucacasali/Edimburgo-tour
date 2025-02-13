@@ -743,3 +743,24 @@ article
 
 }
 
+/*
+################
+     ITINERARY
+################
+ */
+
+button:hover {cursor: pointer;}
+
+.itinerary_description
+{
+opacity: 0;
+height: 0;
+overflow: hidden;
+transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.open-itinerary
+{
+opacity: 1;
+height: 200px;
+}
