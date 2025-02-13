@@ -425,6 +425,11 @@ input[type=submit]:hover
 
 }
 
+@media (pointer: coarse) and (max-width: 500px)
+{
+    .txt{top: 20%}
+}
+
 /*
 ################
      CAROUSEL FEATURES
