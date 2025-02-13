@@ -231,8 +231,8 @@ input[type=submit]:hover
         gap: 0.5rem !important;
         position: absolute;
         z-index: 2;
-        width: 350px;
-        height:400px;
+        width: 300px;
+        min-height:400px;
         top: 0;
         right: 5px;
         padding: 8em 0 2em;
@@ -267,8 +267,26 @@ input[type=submit]:hover
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+@media all and (max-width: 550px)
+{
+    .dropdown
+    {
+        position: static;
+        text-align: center;
+    }
 
-@media (pointer: coarse)
+    .navbar_container  .dropdown_menu {
+        position: static;
+        height: auto;
+        opacity: 1;
+        box-shadow: none;
+        transform: translate(-30px, 5px) !important;
+        width: 350px;
+        background: transparent;
+    }
+}
+
+@media (pointer: coarse) and (max-width: 500px)
 {
     .dropdown
     {
@@ -473,6 +491,12 @@ input[type=submit]:hover
     to {
         opacity: 1;
     }
+}
+
+@media all and (max-width: 750px)
+{
+    .dotsbox { display: none}
+    .prev, .next { font-size: 20px}
 }
 
 /*

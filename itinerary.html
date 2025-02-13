@@ -89,6 +89,7 @@
         <input type="hidden" name="access_key" value="1563f681-fb33-4389-a404-322d3eae0712">
         <input type="hidden" name="from_name" value="Edimburgo Tour">
         <input type="hidden" name="subject" value="Richiesta"/>
+        <input type="hidden" name="redirect" value="https://www.google.com">
 
         <label for="first-name">Nome:</label>
         <input type="text" id="first-name" name="Nome" required><br><br>
@@ -96,24 +97,27 @@
         <label for="last-name">Cognome:</label>
         <input type="text" id="last-name" name="Cognome" required><br><br>
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+
         <label for="start-date">Data di Partenza:</label>
-        <input type="text" id="start-date" name="Data di Partenza" placeholder="dd/mm/yy" required><br><br>
+        <input type="text" id="start-date" name="Data di Partenza" placeholder="dd/mm/yy" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{2}" required><br><br>
 
         <label for="end-date">Data di Ritorno:</label>
-        <input type="text" id="end-date" name="Data di Ritorno" placeholder="dd/mm/yy" required><br><br>
+        <input type="text" id="end-date" name="Data di Ritorno" placeholder="dd/mm/yy" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{2}" required><br><br>
 
         <label for="num-guests">Numero di Partecipanti:</label>
         <input type="number" id="num-guests" name="Numero di Partecipanti" min="1" required><br><br>
 
         <label for="itinerary">Tipologia di Itinerario:</label>
         <select id="itinerary" name="Itinerario">
-            <option value="Tour Privati a Edimburgo">Tour Privati a Edimburgo</option>
-            <option value="Tour Privati Giornaliere Fuori Edimburgo">Tour Privati Giornaliere Fuori Edimburgo</option>
-            <option value="Tour Privati di Più Giorni in Scozia">Tour Privati di Più Giorni in Scozia</option>
+            <option value="edi-tour">Tour Privati a Edimburgo</option>
+            <option value="daily-tour">Tour Privati Giornaliere Fuori Edimburgo</option>
+            <option value="days-tour">Tour Privati di Più Giorni in Scozia</option>
         </select>
 
         <label for="message">Messaggio:</label><br>
-        <textarea id="message" name="Messaggio" rows="4" cols="50"></textarea><br><br>
+        <textarea id="message" name="Messaggio" rows="4" cols="50" required></textarea><br><br>
 
         <input type="submit" value="Submit">
     </form>
@@ -140,7 +144,7 @@
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-    <div style="text-align: center; color: darkgrey; margin-top: 2em;">
+    <div style="text-align: center; color: darkgrey; margin-top: 2em; padding: 1em;">
         <p>Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216. Ufficio registrato: 11/2 Dunsyre House South 31 Calder Crescent EH11 4JQ</p>
         <p>Website designed by <i>Gianluca Casali</i></p>
         <p>Photographes courtesy of <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
