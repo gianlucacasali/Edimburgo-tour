@@ -684,7 +684,7 @@ option
     font-size: 100%;
 }
 
-input[type=text]:focus
+input:focus
 {
     border: 1px solid var(--cl-accent);
 }
@@ -696,6 +696,54 @@ textarea
     padding: 0.5em 1em;
     border-radius: 4px;
     resize: none;
+    font-family: var(--f-family);
+}
+
+.itinerary_btn {display: none;}
+
+@media all and (max-width: 600px)
+{
+    button:hover {cursor: pointer;}
+
+    .itinerary_header
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .itinerary_btn
+    {
+        display: block;
+        padding: 0.6em; 
+        background: transparent; 
+        font-size: 1.5rem; 
+        color: hsl(180, 100%, 25%);
+        background: url('./images/opt-images/assets/arrow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    .itinerary_description
+    {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .open_itinerary
+    {
+        opacity: 1;
+        height: 500px;
+    }
+
+    .rotated
+    {
+        transform: rotate(180deg);
+    }
 }
 
 
@@ -741,26 +789,4 @@ article
 
     .grid_container > * {grid-column: 1;}
 
-}
-
-/*
-################
-     ITINERARY
-################
- */
-
-button:hover {cursor: pointer;}
-
-.itinerary_description
-{
-opacity: 0;
-height: 0;
-overflow: hidden;
-transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.open-itinerary
-{
-opacity: 1;
-height: 200px;
 }

@@ -50,8 +50,10 @@
 </header>
 <main>
     <div id="edi-tour" class="paragraph_container">
-        <h2 style="float: left;">Tour Privati a Edimburgo – Un’Esperienza Su Misura</h2>
-        <button data-itinerary="edi-tour" style="padding: 0.8em; background: transparent; font-size: 1.5rem; color: hsl(180, 100%, 25%); "><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="itinerary_header">
+            <h2>Tour Privati a Edimburgo – Un’Esperienza Su Misura</h2>
+            <button class="itinerary_btn" data-itinerary="edi-tour"></button>
+        </div>
         <div class="itinerary_description">
         <p>Scopri Edimburgo con un tour privato pensato esclusivamente per te!
             Che tu voglia esplorare la città per qualche ora o trascorrere un’intera giornata immerso nella sua storia e cultura, creeremo un itinerario personalizzato in base ai tuoi interessi e desideri.
@@ -64,9 +66,13 @@
     </div>
     </div>
 
-    <div class="paragraph_container">
-        <h2>Tour Privati Giornalieri Fuori Edimburgo – Scopri la Scozia in Profondità</h2>
-        <p>Esplora la bellezza della Scozia con un tour privato giornaliero, creato su misura per te!
+    <div id="daily-tour" class="paragraph_container">
+        <div class="itinerary_header">
+            <h2>Tour Privati Giornalieri Fuori Edimburgo – Scopri la Scozia in Profondità</h2>
+            <button class="itinerary_btn" data-itinerary="daily-tour"></button>
+        </div>
+        <div class="itinerary_description">
+            <p>Esplora la bellezza della Scozia con un tour privato giornaliero, creato su misura per te!
             Lasciati alle spalle la città e immergiti nei paesaggi mozzafiato delle Highlands, visita antichi castelli, incantevoli villaggi e incantevoli laghi che rendono unica questa terra. Puoi scegliere tra escursioni a luoghi iconici come il Loch Ness, il Castello di Stirling o le suggestive valli delle Highlands.
             Ogni tour sarà progettato in base ai tuoi interessi, dalle meraviglie naturali alla storia affascinante, per offrirti un’esperienza unica e personalizzata. Le nostre guide locali ti condurranno in ogni tappa, arricchendo il viaggio con storie e curiosità.
             Che tu preferisca una gita rilassante o un’avventura piena di scoperte, il nostro tour privato ti garantisce comfort, esclusività e un'esperienza autentica.
@@ -74,19 +80,25 @@
             </p>
             <br>
             <p><i class="fa-solid fa-people-group accent-color"></i> Max 15 persone</p>
-        </div>
+        </div>   
+     </div>
 
-    <div class="paragraph_container">
-        <h2>Tour Privati di Più Giorni in Scozia – Un Viaggio Su Misura</h2>
-        <p>Scopri la magia della Scozia con un tour privato di più giorni, pensato interamente per te!
-            Dalle maestose Highlands alle isole selvagge, dai castelli medievali ai laghi leggendari, ogni itinerario sarà creato su misura in base ai tuoi interessi e desideri. Potrai esplorare luoghi iconici come l’Isola di Skye, Loch Ness, Glencoe, il Castello di Eilean Donan e tanto altro, immergendoti nella storia, nella natura e nelle tradizioni scozzesi.
-            Viaggerai con una guida esperta che arricchirà ogni tappa con racconti affascinanti e aneddoti coinvolgenti, garantendo un'esperienza autentica e senza stress. Potrai scegliere il ritmo che preferisci, soggiornare in alloggi selezionati e vivere un’avventura unica, circondato da panorami indimenticabili.
-            Che tu voglia un viaggio rilassante o un’avventura ricca di esplorazioni, il nostro tour privato ti permetterà di scoprire la vera essenza della Scozia, con tutto il comfort e la personalizzazione che meriti.
-            Prenota ora il tuo tour su misura e vivi un’esperienza indimenticabile tra le meraviglie della Scozia!
-            </p>
-            <br>
-            <p><i class="fa-solid fa-people-group accent-color"></i> Max 15 persone</p>
+    <div id="multiple-tour" class="paragraph_container">
+        <div class="itinerary_header">
+            <h2>Tour Privati di Più Giorni in Scozia – Un Viaggio Su Misura</h2>
+            <button class="itinerary_btn" data-itinerary="multiple-tour"></button>
         </div>
+        <div class="itinerary_description">
+            <p>Scopri la magia della Scozia con un tour privato di più giorni, pensato interamente per te!
+                Dalle maestose Highlands alle isole selvagge, dai castelli medievali ai laghi leggendari, ogni itinerario sarà creato su misura in base ai tuoi interessi e desideri. Potrai esplorare luoghi iconici come l’Isola di Skye, Loch Ness, Glencoe, il Castello di Eilean Donan e tanto altro, immergendoti nella storia, nella natura e nelle tradizioni scozzesi.
+                Viaggerai con una guida esperta che arricchirà ogni tappa con racconti affascinanti e aneddoti coinvolgenti, garantendo un'esperienza autentica e senza stress. Potrai scegliere il ritmo che preferisci, soggiornare in alloggi selezionati e vivere un’avventura unica, circondato da panorami indimenticabili.
+                Che tu voglia un viaggio rilassante o un’avventura ricca di esplorazioni, il nostro tour privato ti permetterà di scoprire la vera essenza della Scozia, con tutto il comfort e la personalizzazione che meriti.
+                Prenota ora il tuo tour su misura e vivi un’esperienza indimenticabile tra le meraviglie della Scozia!
+                </p>
+                <br>
+                <p><i class="fa-solid fa-people-group accent-color"></i> Max 15 persone</p>
+            </div>
+    </div>
 
     <form id="form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="1563f681-fb33-4389-a404-322d3eae0712">
