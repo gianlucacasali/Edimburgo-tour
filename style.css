@@ -643,7 +643,27 @@ input[type=submit]:hover
     padding: 0;
 }
 
+.book_btn
+{
+    width: 100%;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border: 3px solid var(--cl-accent);
+    border-radius: 25px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-bottom: 3em;
+    text-align: center;
+    background-color: var(--cl-accent);
+    color: #FFF;
+    box-shadow: 2px 3px 3px var(--cl-accent-lighter);
+}
 
+.book_btn:hover 
+{
+    color: #FFF;
+}
 
 /*
 ################
