@@ -587,7 +587,7 @@ input[type=submit]:hover
     padding: 1em;
 }
 
-.business_card img
+.business_card_img
 {
     width: 65%;
     max-height: 550px;
@@ -727,10 +727,10 @@ textarea
 
     .itinerary_header
     {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; */
     }
 
     .itinerary_btn
@@ -743,21 +743,27 @@ textarea
         background: url('./images/opt-images/assets/arrow.png');
         background-size: contain;
         background-repeat: no-repeat;
+        float: inline-end;
+        margin-inline-start: 1em;
         border: none;
+        
     }
 
     .itinerary_description
     {
-        opacity: 0;
+        /* opacity: 0;
         height: 0;
         overflow: hidden;
         transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        overflow: scroll; */
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease;
+        display: grid;
     }
 
-    .open_itinerary
+    .itinerary_description:not(.hide)
     {
-        opacity: 1;
-        height: 500px;
+        grid-template-rows: 1fr !important;
     }
 
     .rotated

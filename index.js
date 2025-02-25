@@ -13,7 +13,7 @@ document.addEventListener('click', function(e){
     let id = e.target.getAttribute('data-itinerary'); // target the attribute name of the element where the click has appeaned
     let parent = document.getElementById(id) // get the parent of the element clicked, id will match with attribute
     let target = parent.querySelector('.itinerary_description') // select the child with the specified class
-    target.classList.toggle('open_itinerary') // toggle the class open-faw 
+    target.classList.toggle('hide') // toggle the class open-faw 
     e.target.classList.toggle('rotated')
 })
 
