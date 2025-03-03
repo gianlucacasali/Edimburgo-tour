@@ -162,6 +162,7 @@ input[type=submit]
     border: none;
     cursor: pointer;
     display: none;
+    margin-left: 1em;
 }
 
 .bar
