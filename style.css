@@ -412,7 +412,7 @@ input[type=submit]:hover
 
 @media all and (max-width: 750px)
 {
-    .myslide {height: 1000px;}
+    .higher {height: 1000px;}
 
     .col-2,
     .col-3
