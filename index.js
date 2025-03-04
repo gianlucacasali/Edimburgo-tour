@@ -22,7 +22,7 @@ const myslide = document.querySelectorAll('.fade'),
     dot = document.querySelectorAll('.dot');
 let counter = 1;
 slidefun(counter);
-let timer = setInterval(autoSlide, 8000);
+let timer = setInterval(autoSlide, 10000);
 function autoSlide() {
     counter += 1;
     slidefun(counter);
@@ -39,7 +39,7 @@ function currentSlide(n) {
 }
 function resetTimer() {
     clearInterval(timer);
-    timer = setInterval(autoSlide, 8000);
+    timer = setInterval(autoSlide, 10000);
 }
 function slidefun(n) {
     let i;
