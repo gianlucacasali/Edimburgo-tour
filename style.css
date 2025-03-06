@@ -85,9 +85,11 @@ h3 + p
 }
 
 a,
-input[type=submit]{
+input[type=submit]
+{
     text-decoration: none;
     color: var(--cl-text);
+    background: transparent;
 }
 
 a:hover
