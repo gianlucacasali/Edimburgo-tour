@@ -89,7 +89,7 @@ input[type=submit]
 {
     text-decoration: none;
     color: var(--cl-text);
-    background: transparent;
+    
 }
 
 a:hover
@@ -684,6 +684,7 @@ form
     border: 1px solid var(--cl-accent);
     border-radius: 15px;
     font-family: var(--f-family);
+    box-shadow: 2px 3px 3px var(--cl-accent);
 }
 
 label
@@ -708,6 +709,7 @@ option
     font-family: var(--f-family);
     font-size: 100%;
     color: inherit;
+    background: transparent;
 }
 
 input:focus
