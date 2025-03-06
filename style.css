@@ -707,6 +707,7 @@ option
     outline: none;
     font-family: var(--f-family);
     font-size: 100%;
+    color: inherit;
 }
 
 input:focus
