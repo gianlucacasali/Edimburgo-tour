@@ -139,7 +139,7 @@ header
 .navbar_container .navbar_menu
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     gap: 1em;
     list-style: none;
@@ -150,7 +150,7 @@ input[type=submit]
 {
 
     font-size: var(--fs-heading2);
-    padding: 0.3em 1.5em;
+    padding: 0.3em 1em;
     border-radius: 25px;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -164,6 +164,7 @@ input[type=submit]
     border: none;
     cursor: pointer;
     display: none;
+    margin-left: 2em;
 }
 
 .bar
@@ -223,7 +224,7 @@ input[type=submit]:hover
     color: white;
 }
 
-@media all and (max-width: 1500px)
+@media all and (max-width: 1320px)
 {
 
     .navbar_container .navbar_menu {
@@ -359,7 +360,7 @@ input[type=submit]:hover
 {
     width: 33.3%;
     position: relative;
-    height: 600px;
+    height: 500px;
 }
 
 .txt
@@ -413,6 +414,8 @@ input[type=submit]:hover
 
 @media all and (max-width: 750px)
 {
+    .higher {height: 1000px;}
+
     .col-2,
     .col-3
     {
@@ -423,11 +426,11 @@ input[type=submit]:hover
 
     .direction {flex-direction: column;}
 
-    .slider_description {display: none;}
+    .slider_description {}
 
 }
 
-@media (pointer: coarse) and (max-width: 500px)
+@media all and (max-width: 500px)
 {
     .txt{top: 20%}
 }
@@ -516,7 +519,7 @@ input[type=submit]:hover
     display: block;
     margin: 6em auto 3em;
     width: 100%;
-    height: 100%;
+    height: 100px;
     max-width: 535px;
     padding: 0.5em;
 }
