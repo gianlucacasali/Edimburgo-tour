@@ -417,6 +417,12 @@ input[type=submit]:hover
     .flex3 {flex-direction: column}
 }
 
+@media (pointer: coarse) and (max-width: 450px)
+{
+    .txt {top: 20%;}
+}
+
+
 /* @media all and (max-width: 500px)
 {
     .txt{top: 20%}
