@@ -2,7 +2,7 @@
 {
     box-sizing: border-box;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 :root
@@ -23,7 +23,6 @@
     --fs-body: 1rem;
 
     --letter-spacing: 1.2px;
-    --line-height: 1.6;
 
     --max-width: 1700px;
     --border-radius: 10px;
@@ -33,7 +32,7 @@ img
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* the image keeps its aspect ratio and fills the given dimension. */
     border-radius: var(--border-radius);
     display: block;
 }
@@ -79,7 +78,7 @@ h2
 
 h2,
 h3,
-h3 + p
+h3 + p /* combinators -  style first adjacent paragraph */
 {
     margin-bottom: 0.5em;
 }
@@ -117,7 +116,8 @@ footer
 {
     max-width: var(--max-width);
     width:100%;
-    margin: 0 auto;
+    margin: 1em auto 0;
+    padding: 0 1em;
 }
 
 header
@@ -126,12 +126,12 @@ header
     height: 150px;
 }
 
-.navbar_container
+.navbar_container /* contains logo, toggle and menu (links)  */
 {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2em;
+    align-items: center; /* cross-axis */
+    justify-content: space-between; /* main-axis*/
+    /* padding: 0 2em; */
     width: 100%;
     max-width: var(--max-width);
 }
@@ -245,8 +245,7 @@ input[type=submit]:hover
     }
 
     .navbar_container .dropdown_menu {
-        top: -15%;
-        left: -320%;
+        left: -220%;
     }
 
     .navbar_container .navbar_menu.openNavbar {
@@ -320,47 +319,44 @@ input[type=submit]:hover
 ################
  */
 
+  /* container for sliders */
 .slider {
     position: relative;
     max-width: var(--max-width);
-    margin-inline: auto;
     width: 100%;
+    margin-inline: auto;
     font-optical-sizing: auto;
-    font-weight: 300;
     border-radius: var(--border-radius);
 
 }
 
+/* container for actual images */
 .myslide
 {
     max-height: 800px;
-    overflow: hidden;
-    display: block;
+    overflow: hidden; /* the rest of the content is invisible */
+    display: block; /* overflow works for block elements with specific height */
+    border-radius: var(--border-radius);
 }
 
-.wrap 
-{ 
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* applied to myslide */
 .opacity {opacity: 0.2;}
 
+/* applied to each image - combined with the overlay, images will looked darken for the text to stand out  */
 .overlay {background: #2c3e50;}
 
-.direction {display: flex}
-
-.col-2
+.flex3
 {
-    width: 50%;
-    position: relative;
+    display: flex;
+    gap: 5px;
 }
 
 .col-3
 {
-    width: 33.3%;
+    flex-basis: 33.3%;
     position: relative;
     height: 500px;
+    border-radius: var(--border-radius);
 }
 
 .txt
@@ -409,31 +405,22 @@ input[type=submit]:hover
 
 @media all and (max-width: 1100px)
 {
-    .txt {top: 30%;}
+    .txt {top: 30%}
 }
 
 @media all and (max-width: 750px)
 {
-    .higher {height: 1000px;}
+    .higher {height: 1000px}
 
-    .col-2,
-    .col-3
-    {
-        width: 100%;
-    }
+    .txt {top: 30%}
 
-    .txt {top: 40%;}
-
-    .direction {flex-direction: column;}
-
-    .slider_description {}
-
+    .flex3 {flex-direction: column}
 }
 
-@media all and (max-width: 500px)
+/* @media all and (max-width: 500px)
 {
     .txt{top: 20%}
-}
+} */
 
 /*
 ################
@@ -521,48 +508,41 @@ input[type=submit]:hover
     width: 100%;
     height: 100px;
     max-width: 535px;
-    padding: 0.5em;
 }
 
-.logo img {object-fit: contain;}
+.logo img {object-fit: contain;} /* image resized to fit within given dimension */
 
 .footer_container
 {
     display: flex;
     justify-content: space-evenly;
-    padding: 1em;
 }
 
 .footer_container > *
 {
-    width: 400px;
+    flex-basis: 30%;
     text-align: center;
 
 }
 
 .footer_container > div > a
 {
-    display: block;
+    display: block; /* anchors are inline per default - want them on different lines */
 }
 
-.social-list .social-link
+.social-list .social-link /* double class for specificity reason - override the property above */
 {
     margin: 0 .5em;
     display: inline;
     font-size: var(--fs-heading2);
 }
 
-
 @media all and (max-width: 750px)
 {
-
     .footer_container {
         flex-direction: column;
-        align-content: center;
-        align-items: center;
-        gap: 30px;
+        gap: 3em;
     }
-
 }
 
 /*
@@ -575,20 +555,18 @@ input[type=submit]:hover
 .paragraph_container
 {
     max-width: 1300px;
-    margin: 1em auto;
-    padding: 2.5em 2em 2em;
+    margin: 2em auto;
 }
 
 .business_card
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .business_card > *
 {
-    width: 50%;
+    flex-basis: 50%;
     padding: 1em;
 }
 
@@ -603,11 +581,9 @@ input[type=submit]:hover
 
 .extra_margin {margin: 3em auto;}
 
-@media all and (max-width: 750px) {
-
-    .business_card {flex-direction: column;}
-
-    .business_card > * {width: 100%;}
+@media all and (max-width: 750px) 
+{
+    .business_card {flex-direction: column}
 }
 
 
@@ -617,6 +593,18 @@ input[type=submit]:hover
 ################
  */
 
+ .tour_grid
+{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 5px;
+}
+
+.tour_grid > *
+{
+    position: relative;
+}
+
 .tour_info
 {
     display: flex;
@@ -625,7 +613,7 @@ input[type=submit]:hover
     max-width: 1000px;
     width: 100%;
     gap: 5px;
-    margin: 2em auto 0;
+    margin: 3em auto 0;
 }
 
 .tour_info > *
@@ -684,7 +672,7 @@ form
     border: 1px solid var(--cl-accent);
     border-radius: 15px;
     font-family: var(--f-family);
-    box-shadow: 2px 3px 3px var(--cl-accent);
+    box-shadow: 0 2px 3px var(--cl-accent);
 }
 
 label
@@ -814,12 +802,4 @@ article
 {
     grid-row: span 4;
     grid-column: span 2;
-}
-
-@media all and (max-width: 750px)
-{
-    .grid_container {grid-template-columns: 1fr;}
-
-    .grid_container > * {grid-column: 1;}
-
 }
