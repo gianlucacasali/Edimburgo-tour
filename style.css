@@ -596,8 +596,13 @@ input[type=submit]:hover
  .tour_grid
 { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 5px;
+}
+
+@media all and (max-width: 450px)
+{
+    .tour_grid { grid-template-columns: 1fr}
 }
 
 .tour_grid > *
