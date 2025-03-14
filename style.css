@@ -794,6 +794,7 @@ textarea
     border-radius: 15px;
 }
 
+
 article
 {
     display: flex;
@@ -810,4 +811,10 @@ article
 {
     grid-row: span 4;
     grid-column: span 2;
+}
+
+@media all and (max-width: 600px)
+{
+    .grid_container { grid-template-columns: 1fr }
+    .horizontal { grid-column: span 1;}
 }
