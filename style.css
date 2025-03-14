@@ -362,7 +362,7 @@ input[type=submit]:hover
 .txt
 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 15%;
     -webkit-animation-name: posi;
     -webkit-animation-duration: 2s;
@@ -403,16 +403,11 @@ input[type=submit]:hover
     to { left: 15%; }
 }
 
-@media all and (max-width: 1100px)
-{
-    .txt {top: 30%}
-}
+
 
 @media all and (max-width: 750px)
 {
     .higher {height: 1000px}
-
-    .txt {top: 30%}
 
     .flex3 {flex-direction: column}
 }
@@ -609,11 +604,13 @@ input[type=submit]:hover
 @media all and (max-width: 450px)
 {
     .tour_grid { grid-template-columns: 1fr}
+    .tour_grid > * { height: 400px}
 }
 
 .tour_grid > *
 {
     position: relative;
+    
 }
 
 .tour_info
