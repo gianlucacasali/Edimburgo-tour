@@ -123,14 +123,15 @@ footer
 header
 {
     display: flex;
-    height: 150px;
+    height: 200px;
 }
 
 .navbar_container /* contains logo, toggle and menu (links)  */
 {
     display: flex;
+    flex-direction: column;
     align-items: center; /* cross-axis */
-    justify-content: space-between; /* main-axis*/
+    justify-content:space-around; /* main-axis*/
     /* padding: 0 2em; */
     width: 100%;
     max-width: var(--max-width);
@@ -224,8 +225,9 @@ input[type=submit]:hover
     color: white;
 }
 
-@media all and (max-width: 1320px)
+@media all and (max-width: 800px)
 {
+    .navbar_container {flex-direction: row}
 
     .navbar_container .navbar_menu {
         display: none;
