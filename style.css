@@ -190,7 +190,7 @@ input[type=submit]
 
     position: absolute;
     background-color: var(--cl-background);
-    top: 96%;
+    top: 90%;
     left: -100%;
     width: 400px;
     height: 0;
