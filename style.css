@@ -712,7 +712,7 @@ option
     width: 100%;
     padding: 0.5em 1em;
     display: inline-block;
-    border: 1px solid grey;
+    border: 1px solid var(--cl-accent);
     border-radius: 4px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
