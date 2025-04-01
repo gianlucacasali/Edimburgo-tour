@@ -670,14 +670,15 @@ input[type=submit]:hover
     outline: none;
     margin-bottom: 3em;
     text-align: center;
-    background-color: var(--cl-accent);
-    color: #FFF;
+    background-color: transparent;
+    color: #000;
     box-shadow: 2px 3px 3px var(--cl-accent-lighter);
 }
 
 .book_btn:hover 
 {
     color: #FFF;
+    background-color: var(--cl-accent);
 }
 
 /*
