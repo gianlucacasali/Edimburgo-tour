@@ -194,6 +194,7 @@ input[type=submit]
     display: none;
     font-size: var(--fs-heading2);
     cursor: pointer;
+    color: inherit;
 }
 
 .tour_toggle:hover {color: var(--cl-accent);}
@@ -310,7 +311,7 @@ input[type=submit]:hover
 
 @media (pointer: coarse) and (max-width: 500px)
 {
-    .dropdown:hover .tour_toggle
+    .tour_toggle
     {
         display: inline;
     }
