@@ -214,7 +214,7 @@ input[type=submit]
     width: 100%;
     padding: 1em 0;
     background-color: var(--cl-background);
-    box-shadow: 0 20px 20px rgba(106, 106, 106, 0.539);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.458);
     transition: opacity 0.3s ease; /* Smooth transition */
     list-style: none;
 }
@@ -250,9 +250,9 @@ input[type=submit]:hover
         align-items: center;
         gap: 4rem !important;
         padding: 4em 0;
-        display: none;
         left: 0;
         background: var(--cl-background);
+        box-shadow: 0 30px 20px rgba(0, 0, 0, 0.458);
     }
 
     .navbar_container .navbar_menu {
