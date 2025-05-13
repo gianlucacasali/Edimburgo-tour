@@ -314,7 +314,6 @@ input[type=submit]:hover
     .tour_toggle
     {
         display: inline;
-        color: var(--cl-accent);
     }
 }
 
