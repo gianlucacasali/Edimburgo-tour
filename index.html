@@ -19,6 +19,11 @@
 </head>
 <body>
     <header>
+        <div class="shortcut_contacts">
+            <a class="social-link" href="#contacts"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social-link" href="#contacts"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social-link" href="itinerary.html"><i class="fa-solid fa-van-shuttle"></i></a>
+        </div>
         <nav class="navbar_container">
             <a class="navbar_logo" href="index.html">
                 <!-- <source  media="(min-width:750px)" srcset="./images/opt-images/logos-opt/edimburgotour-logo.png"> -->
@@ -33,7 +38,9 @@
                 <li><a id="active"  href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="tours.html">Tour</a>
+                    <button class="tour_toggle" onclick="openTours()"><i class="fa-solid fa-circle-plus"></i></button>
                     <ul class="dropdown_menu">
+                        <button class="tour_toggle" onclick="closeTours()"><i class="fa-solid fa-circle-minus"></i></button>
                         <li><a href="tour-castello.html">Tour del Castello</a></li>
                         <li><a href="tour-classico.html">Tour Classico</a></li>
                         <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>
@@ -52,7 +59,7 @@
         <!-- Carousel -->
         <div class="slider overlay">
             <!-- Slide 1 -->
-            <div class="myslide fade higher">
+            <div class="myslide fade portrait">
                 <div class="txt">
                     <h2>Castello di Edinburgo</h2>
                     <p class="slider_description">Arroccato su un’imponente roccia vulcanica, il Castello di Edimburgo domina la città con il suo fascino medievale e la sua storia intrisa di battaglie e leggende. Un tempo residenza reale e fortezza inespugnabile, oggi custodisce i Gioielli della Corona scozzese. Dai bastioni, lo sguardo spazia su Edimburgo, mentre ogni giorno, puntuale, il One O’Clock Gun risuona tra le antiche mura, riportando in vita le tradizioni scozzesi.</p>
@@ -65,7 +72,7 @@
                 </picture>
             </div>
             <!-- Slide 2 -->
-            <div class="myslide fade higher">
+            <div class="myslide fade portrait">
                 <div class="txt">
                     <h2>Victoria Street</h2>
                     <p class="slider_description">Victoria Street, nel cuore di Edimburgo, è una delle strade più pittoresche della città. Con le sue facciate colorate, i negozi unici e la caratteristica curva in salita, è un luogo imperdibile per visitatori e appassionati di fotografia.</p>
@@ -78,7 +85,7 @@
                 </picture>
             </div>
             <!-- Slide 3 -->
-            <div class="myslide fade higher">
+            <div class="myslide fade portrait">
                 <div class="txt">
                     <h2>Cimitero di Greyfriars</h2>
                     <p class="slider_description">Greyfriars è uno dei luoghi più affascinanti di Edimburgo, avvolto da storia, leggende e un pizzico di mistero. Celebre per il suo antico cimitero e per la commovente storia di Greyfriars Bobby, il cane che vegliò sulla tomba del padrone per anni, questo angolo della città nasconde segreti secolari, storie di fantasmi e un’atmosfera unica tutta da scoprire.</p>
@@ -90,7 +97,7 @@
                     <img class="slider_img opacity" src="./images/opt-images/slider-opt/saint-cuthberts-burial-ground-opt.jpg" alt="image of Greyfriars Kirkyard Cemetery">
                 </picture>
             </div>
-            <div class="myslide fade higher">
+            <div class="myslide fade portrait">
                 <div class="txt">
                     <h2>Città Vecchia</h2>
                     <p class="slider_description">La Città Vecchia di Edimburgo, cuore storico della capitale scozzese, è un affascinante labirinto di strade medievali, vicoli nascosti e monumenti iconici. Dominata dal maestoso Castello di Edimburgo, offre un viaggio nel tempo tra storia, cultura e tradizioni scozzesi.</p>
@@ -158,8 +165,8 @@
             <p>Che tu sia un appassionato di storia, un amante della natura o un cacciatore di leggende, con Edimburgo Tour troverai l’avventura perfetta. Sei pronto a innamorarti della Scozia? Noi siamo qui per mostrarti il meglio!</p>
         </div>
 
-        <div class="slider flex3" id="extra_margin">
-            <div class="col3 overlay">
+        <div class="slider flex" id="extra_margin">
+            <div class="col overlay">
                 <div class="txt">
                     <h2>Tour storici a piedi</h2>
                     <br>
@@ -167,7 +174,7 @@
                 </div>
                 <img class="slider_img opacity" src="./images/opt-images/old-town-tour-opt/old-town-close-opt.jpg" alt="image of a close in Edinburgh">
             </div>
-            <div class="col3 overlay">
+            <div class="col overlay">
                 <div class="txt">
                     <h2>Tour di gruppo personalizzati</h2>
                     <br>
@@ -176,7 +183,7 @@
                 <img class="slider_img opacity" src="./images/opt-images/gallery-opt/donan-tour-vertical-opt.jpg" alt="image of a tour group with a castle in the background">
 
             </div>
-            <div class="col3 overlay">
+            <div class="col overlay">
                 <div class="txt">
                     <h2>Avventure nelle highlands</h2>
                     <br>
@@ -198,7 +205,7 @@
                 <a href="t&c.html">Termini e condizioni</a>
                 <a href="privacy.html">Privacy Policy</a>
             </div>
-            <div class="contact_details">
+            <div class="contact_details" id="contacts">
                 <h3>Contatti</h3>
                 <!--<a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png"/><a/>-->
                 <a href="https://wa.me/+447360199145"><i class="fa-brands fa-whatsapp"></i> +44 (0) 7360199145</a>

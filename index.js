@@ -2,18 +2,31 @@
 
 const navbarToggle = document.querySelector('.navbar_toggle')
 const navbarMenu = document.querySelector('.navbar_menu')
+const dropdownMenu = document.querySelector('.dropdown_menu')
 
 function openNavbar()
 {
     navbarMenu.classList.toggle('openNavbar')
     navbarToggle.classList.toggle('openNavbar')
+    if(dropdownMenu.classList.contains('openTours') == true)
+        dropdownMenu.classList.toggle('openTours')
+}
+
+function openTours()
+{
+    dropdownMenu.classList.toggle('openTours')
+}
+
+function closeTours()
+{
+    dropdownMenu.classList.toggle('openTours')
 }
 
 document.addEventListener('click', function(e){
     let id = e.target.getAttribute('data-itinerary'); // target the attribute name of the element where the click has appeaned
     let parent = document.getElementById(id) // get the parent of the element clicked, id will match with attribute
     let target = parent.querySelector('.itinerary_description') // select the child with the specified class
-    target.classList.toggle('hide') // toggle the class open-faw 
+    target.classList.toggle('hide') // toggle the class open-faw
     e.target.classList.toggle('rotated')
 })
 

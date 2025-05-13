@@ -19,6 +19,11 @@
 </head>
 <body>
     <header>
+        <div class="shortcut_contacts">
+            <a class="social-link" href="#contacts"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social-link" href="#contacts"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social-link" href="itinerary.html"><i class="fa-solid fa-van-shuttle"></i></a>
+        </div>
         <nav class="navbar_container">
             <a class="navbar_logo" href="index.html">
                 <!-- <source  media="(min-width:750px)" srcset="./images/opt-images/logos-opt/edimburgotour-logo.png"> -->
@@ -33,7 +38,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a id="active" href="tours.html">Tour</a>
+                    <button class="tour_toggle" onclick="openTours()"><i class="fa-solid fa-circle-plus"></i></button>
                     <ul class="dropdown_menu">
+                        <button class="tour_toggle" onclick="closeTours()"><i class="fa-solid fa-circle-minus"></i></button>
                         <li><a href="tour-castello.html">Tour del Castello</a></li>
                         <li><a href="tour-classico.html">Tour Classico</a></li>
                         <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>

@@ -1,6 +1,6 @@
 *
 {
-    box-sizing: border-box;
+    box-sizing: border-box; /* it allows to include padding and border within the element total width and height */
     margin: 0;
     line-height: 1.6;
 }
@@ -24,7 +24,7 @@
 
     --letter-spacing: 1.2px;
 
-    --max-width: 1700px;
+    --max-width: 1700px; /* elements won't grow any wider than this value*/
     --border-radius: 10px;
 }
 
@@ -88,7 +88,7 @@ input[type=submit]
 {
     text-decoration: none;
     color: var(--cl-text);
-    
+
 }
 
 a:hover
@@ -114,17 +114,26 @@ header,
 main,
 footer
 {
-    max-width: var(--max-width);
-    width:100%;
-    margin: 1em auto 0;
-    padding: 0 1em;
+    /* max-width: var(--max-width); */
+    max-width: 100%;
+    margin: 3em auto 3em;
+    /* padding: 0 1em; */
 }
 
 header
 {
     display: flex;
     height: 200px;
+    padding: 0 1em;
 }
+
+.shortcut_contacts
+{
+    position: absolute;
+    top: 2em;
+    right:2em;
+}
+
 
 .navbar_container /* contains logo, toggle and menu (links)  */
 {
@@ -134,7 +143,7 @@ header
     justify-content:space-around; /* main-axis*/
     /* padding: 0 2em; */
     width: 100%;
-    max-width: var(--max-width);
+    /* max-width: var(--max-width); */
 }
 
 .navbar_container .navbar_menu
@@ -178,44 +187,47 @@ input[type=submit]
     transition: all 0.3s ease-in-out;
 }
 
-.dropdown
+.tour_toggle
 {
-    position: relative;
+    border: none;
+    background: transparent;
+    display: none;
+    font-size: var(--fs-heading2);
+    cursor: pointer;
 }
+
+.tour_toggle:hover {color: var(--cl-accent);}
 
 /* Dropdown Menu */
 
-
 .dropdown_menu {
 
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
     position: absolute;
+    top: 26%;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    width: 100%;
+    padding: 1em 0;
     background-color: var(--cl-background);
-    top: 90%;
-    left: -100%;
-    width: 400px;
-    height: 0;
-
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    z-index: 2;
-    opacity: 0;
-    transform: translateY(-10px); /* Slightly above the parent */
-    transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease; /* Smooth transition */
+    box-shadow: 0 20px 20px rgba(106, 106, 106, 0.539);
+    transition: opacity 0.3s ease; /* Smooth transition */
     list-style: none;
-    overflow: hidden;
 }
 
 .dropdown_menu li
 {
-    padding: 0.3em 1.5em;
+    padding: 0.3em 1em;
 }
 
-.dropdown:hover .dropdown_menu {
-    height: auto;
-    opacity: 1; /* Make it fully visible */
-    transform: translateY(5px); /* Slide to original position */
-}
+.dropdown:hover .dropdown_menu
+{
 
+    display: grid;
+}
 
 #active,
 .navbar_container .navbar_menu a:hover,
@@ -225,38 +237,62 @@ input[type=submit]:hover
     color: white;
 }
 
-@media all and (max-width: 800px)
+@media all and (max-width: 820px)
 {
     .navbar_container {flex-direction: row}
 
-    .navbar_container .navbar_menu {
+    .navbar_container .navbar_menu,
+    .navbar_container .dropdown_menu
+    {
         display: none;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        gap: 0.5rem !important;
+        gap: 4rem !important;
+        padding-top: 4em;
+        display: none;
+        left: 0;
+        height: 100vh;
+        background: var(--cl-background);
+    }
+
+    .navbar_container .navbar_menu {
         position: absolute;
         z-index: 2;
-        width: 300px;
-        min-height:400px;
-        top: 0;
-        right: 5px;
-        padding: 8em 0 2em;
-        background: var(--cl-background);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        left: 0;
+        top: 200px;
         backdrop-filter: blur(10px);
     }
 
-    .navbar_container .dropdown_menu {
-        left: -220%;
+    .navbar_container .dropdown_menu
+    {
+        top: 0;
     }
 
-    .navbar_container .navbar_menu.openNavbar {
-        display: flex;
+    .dropdown:hover .dropdown_menu
+    {
+        display: none;
     }
 
     .navbar_toggle {
         display: block;
         z-index: 3;
+    }
+
+    .dropdown:hover .tour_toggle
+    {
+        display: inline;
+    }
+
+    .navbar_container .navbar_menu.openNavbar 
+    {
+        display: flex;
+    }
+
+    .navbar_container .dropdown_menu.openTours
+    {
+        display: flex;
     }
 
     .navbar_toggle.openNavbar .bar:nth-child(2) {
@@ -271,41 +307,12 @@ input[type=submit]:hover
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-@media all and (max-width: 550px)
-{
-    .dropdown
-    {
-        position: static;
-        text-align: center;
-    }
-
-    .navbar_container  .dropdown_menu {
-        position: static;
-        height: auto;
-        opacity: 1;
-        box-shadow: none;
-        transform: translate(-30px, 5px) !important;
-        width: 350px;
-        background: transparent;
-    }
-}
 
 @media (pointer: coarse) and (max-width: 500px)
 {
-    .dropdown
+    .dropdown:hover .tour_toggle
     {
-        position: static;
-        text-align: center;
-    }
-
-    .navbar_container  .dropdown_menu {
-        position: static;
-        height: auto;
-        opacity: 1;
-        box-shadow: none;
-        transform: translate(-30px, 5px) !important;
-        width: 350px;
-        background: transparent;
+        display: inline;
     }
 }
 
@@ -324,9 +331,8 @@ input[type=submit]:hover
   /* container for sliders */
 .slider {
     position: relative;
-    max-width: var(--max-width);
     width: 100%;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     font-optical-sizing: auto;
     border-radius: var(--border-radius);
 
@@ -353,20 +359,30 @@ input[type=submit]:hover
 
 .overlay:hover img { transform: scale(1.1)}
 
-.flex3
+.flex
 {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+
 }
 
-.col3
+.col
 {
+    /* flex-basis: 33.3%;
+    position: relative;
+
+     */
     flex-basis: 33.3%;
     position: relative;
     height: 600px;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 1px 3px 5px grey;
+}
+
+@media all and (max-width: 800px)
+{
+    .flex { flex-direction: column }
 }
 
 .txt
@@ -416,11 +432,9 @@ input[type=submit]:hover
     to { left: 15%; }
 }
 
-
-
 @media all and (max-width: 750px)
 {
-    .higher {height: 1000px}
+    .portrait {height: 1000px}
 
     .flex3 {flex-direction: column}
 }
@@ -517,12 +531,8 @@ input[type=submit]:hover
  */
 .logo
 {
-    display: block;
-    margin: 100px auto 100px;
-    width: 100%;
     height: 100px;
-    max-width: 535px;
-}
+ }
 
 .logo img {object-fit: contain;} /* image resized to fit within given dimension */
 
@@ -530,6 +540,7 @@ input[type=submit]:hover
 {
     display: flex;
     justify-content: space-evenly;
+    margin: 3em;
 }
 
 .footer_container > *
@@ -544,7 +555,8 @@ input[type=submit]:hover
     display: block; /* anchors are inline per default - want them on different lines */
 }
 
-.social-list .social-link /* double class for specificity reason - override the property above */
+.social-list .social-link,
+.social-link /* double class for specificity reason - override the property above */
 {
     margin: 0 .5em;
     display: inline;
@@ -570,6 +582,7 @@ input[type=submit]:hover
 {
     max-width: 1300px;
     margin: 2em auto;
+    padding: 0 1em;
 }
 
 .business_card
@@ -596,7 +609,7 @@ input[type=submit]:hover
 
 #extra_margin {margin: 100px auto;}
 
-@media all and (max-width: 750px) 
+@media all and (max-width: 750px)
 {
     .business_card {flex-direction: column}
 }
@@ -609,7 +622,7 @@ input[type=submit]:hover
  */
 
  .tour_grid
-{ 
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 5px;
@@ -621,11 +634,7 @@ input[type=submit]:hover
     .tour_grid > * { height: 400px}
 }
 
-.tour_grid > *
-{
-    position: relative;
-    
-}
+.tour_grid > * { position: relative }
 
 .tour_info
 {
@@ -675,7 +684,7 @@ input[type=submit]:hover
     box-shadow: 2px 3px 3px var(--cl-accent-lighter);
 }
 
-.book_btn:hover 
+.book_btn:hover
 {
     color: #FFF;
     background-color: var(--cl-accent);
@@ -690,7 +699,7 @@ input[type=submit]:hover
 form
 {
     max-width: 800px;
-    padding: 2em; 
+    padding: 2em;
     margin: 100px auto 0;
     border: 1px solid var(--cl-accent);
     border-radius: 15px;
@@ -755,9 +764,9 @@ textarea
     .itinerary_btn
     {
         display: block;
-        padding: 0.6em; 
-        background: transparent; 
-        font-size: 1.5rem; 
+        padding: 0.6em;
+        background: transparent;
+        font-size: 1.5rem;
         color: hsl(180, 100%, 25%);
         background: url('./images/opt-images/assets/arrow.png');
         background-size: contain;
@@ -765,7 +774,7 @@ textarea
         float: inline-end;
         margin-inline-start: 1em;
         border: none;
-        
+
     }
 
     .itinerary_description
