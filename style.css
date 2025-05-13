@@ -249,10 +249,9 @@ input[type=submit]:hover
         justify-content: flex-start;
         align-items: center;
         gap: 4rem !important;
-        padding-top: 4em;
+        padding: 4em 0;
         display: none;
         left: 0;
-        min-height: 100vh;
         background: var(--cl-background);
     }
 
