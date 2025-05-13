@@ -252,7 +252,7 @@ input[type=submit]:hover
         padding-top: 4em;
         display: none;
         left: 0;
-        height: 100vh;
+        min-height: 100vh;
         background: var(--cl-background);
     }
 
