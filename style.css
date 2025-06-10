@@ -371,19 +371,6 @@ input[type=submit]:hover
 
 .overlay:hover img {transform: scale(1.1);}
 
-/* hover effect applies only to slide with overlays 
-.overlay img 
-{ 
-    opacity: 1; 
-    transition: all 0.4s ease-in-out
-}
-
-.overlay:hover img 
-{
-    opacity: 0.3; 
-    transform: scale(1.1);
-}
-*/
 .flex
 {
     display: flex;
@@ -475,7 +462,12 @@ input[type=submit]:hover
 
 @media (pointer: coarse) and (max-width: 450px)
 {
-    .slider:has(.fade) img { opacity: 1}
+    .slider:has(.fade) img { opacity: 0.3}
+    .prev,
+    .next
+    {
+        display: block;
+    }
     .txt 
     {
         top: 20%;
