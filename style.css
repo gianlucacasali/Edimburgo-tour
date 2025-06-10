@@ -460,20 +460,7 @@ input[type=submit]:hover
 .slider:hover .prev { display: block;}
 .slider:hover .next { display: block;}
 
-@media (pointer: coarse) and (max-width: 450px)
-{
-    .slider:has(.fade) img { opacity: 0.3}
-    .prev,
-    .next
-    {
-        display: block;
-    }
-    .myslide .txt 
-    {
-        top: 20%;
-        display: block;
-    }
-}
+
 
 /* @media all and (max-width: 500px)
 {
@@ -554,6 +541,21 @@ input[type=submit]:hover
 {
     .dotsbox { display: none}
     .prev, .next { font-size: 20px}
+}
+
+@media (pointer: coarse) and (max-width: 450px)
+{
+    .slider:has(.fade) img { opacity: 0.3}
+    .prev,
+    .next
+    {
+        display: block;
+    }
+    .myslide .txt 
+    {
+        top: 20%;
+        display: block;
+    }
 }
 
 /*
