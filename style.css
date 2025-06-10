@@ -543,7 +543,7 @@ input[type=submit]:hover
     .prev, .next { font-size: 20px}
 }
 
-@media (pointer: coarse) and (max-width: 450px)
+/* @media (pointer: coarse) and (max-width: 450px)
 {
     .slider:has(.fade) img { opacity: 0.3}
     .prev,
@@ -556,7 +556,7 @@ input[type=submit]:hover
         top: 20%;
         display: block !important;
     }
-}
+} */
 
 /*
 ################
