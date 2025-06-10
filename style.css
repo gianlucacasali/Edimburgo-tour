@@ -348,17 +348,42 @@ input[type=submit]:hover
     box-shadow: 1px 3px 5px grey;
 }
 
+.opacity { opacity: 0.3 }
+.overlay { background: #2c3e50 }
+
 /* applied to myslide */
-.opacity {opacity: 0.2;}
+.slider:has(.fade) img
+{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
 
 /* applied to each image - combined with the overlay, images will looked darken for the text to stand out  */
-.overlay {background: #2c3e50;}
 
-/* hover effect applies only to slide with overlays */
+
+.slider:hover:has(.fade) img
+{ 
+    opacity: 0.3; 
+    transition: all 0.4s ease-in-out;
+}
+
 .overlay img { transition: transform 0.3s ease-in-out }
 
-.overlay:hover img { transform: scale(1.1)}
+.overlay:hover img {transform: scale(1.1);}
 
+/* hover effect applies only to slide with overlays 
+.overlay img 
+{ 
+    opacity: 1; 
+    transition: all 0.4s ease-in-out
+}
+
+.overlay:hover img 
+{
+    opacity: 0.3; 
+    transform: scale(1.1);
+}
+*/
 .flex
 {
     display: flex;
@@ -386,7 +411,7 @@ input[type=submit]:hover
 }
 
 .txt
-{
+{   
     position: absolute;
     top: 30%;
     left: 15%;
@@ -395,7 +420,7 @@ input[type=submit]:hover
     animation-name: posi;
     animation-duration: 2s;
     z-index: 1;
-    transition: top 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     white-space: normal;
     width: 70%;
 }
@@ -439,11 +464,24 @@ input[type=submit]:hover
     .flex3 {flex-direction: column}
 }
 
+
+
+/* .slider:hover .overlay img {opacity: 0.3} */
+.slider:has(.fade) .txt { display: none}
+.slider:hover:has(.fade) .txt { display: block;}
+
+.slider:hover .prev { display: block;}
+.slider:hover .next { display: block;}
+
 @media (pointer: coarse) and (max-width: 450px)
 {
-    .txt {top: 20%;}
+    .slider:has(.fade) img { opacity: 1}
+    .txt 
+    {
+        top: 20%;
+        display: block;
+    }
 }
-
 
 /* @media all and (max-width: 500px)
 {
@@ -458,6 +496,7 @@ input[type=submit]:hover
 
 .prev,
 .next {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -470,6 +509,7 @@ input[type=submit]:hover
 }
 .prev:hover,
 .next:hover {
+    
     color: #ffffff;
 }
 .next {
