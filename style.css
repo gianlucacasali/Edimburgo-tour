@@ -551,10 +551,10 @@ input[type=submit]:hover
     {
         display: block;
     }
-    .myslide .txt 
+    .txt 
     {
         top: 20%;
-        display: block;
+        display: block !important;
     }
 }
 
