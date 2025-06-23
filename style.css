@@ -217,12 +217,12 @@ input[type=submit]
     grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
     justify-content: center;
     position: absolute;
-    top: 180px;
+    top: 160px;
     left: 0;
     opacity: 1;
     z-index: 1;
     width: 100%;
-    padding: 2em 5em;;
+    padding: 1em 4em;
     background-color: var(--cl-background);
     box-shadow: 0 30px 20px rgba(0, 0, 0, 0.458);
     transition: opacity 0.3s ease; /* Smooth transition */
@@ -275,13 +275,8 @@ input[type=submit]:hover
         z-index: 2;
         width: 100%;
         left: 0;
-        top: 200px;
+        top: 160px;
         backdrop-filter: blur(10px);
-    }
-
-    .navbar_container .dropdown_menu
-    {
-        top: 0;
     }
 
     .dropdown:hover .dropdown_menu
@@ -345,23 +340,28 @@ input[type=submit]:hover
 
   /* container for sliders */
 .slider {
+    max-height: 50em;
     position: relative;
     width: 100%;
     /* margin-inline: auto; */
     font-optical-sizing: auto;
     border-radius: var(--border-radius);
+    overflow: hidden; /* the rest of the content is invisible */
 
 }
 
 /* container for actual images */
-.myslide
+
+
+.tour_grid .myslide
 {
-    max-height: 800px;
+    height: 25em;
     overflow: hidden; /* the rest of the content is invisible */
     display: block; /* overflow works for block elements with specific height */
     border-radius: var(--border-radius);
     box-shadow: 1px 3px 5px grey;
 }
+
 
 .opacity { opacity: 0.3 }
 .overlay { background: #2c3e50 }
@@ -425,10 +425,11 @@ input[type=submit]:hover
     transition: all 0.3s ease 0s;
     white-space: normal;
     width: 70%;
+    overflow: hidden;
+    font-size: 18px;
 }
 
 .txt h2 { font-size: 20.8px}
-.txt p,a { font-size: 16px }
 
 .txt a
 {
@@ -464,6 +465,8 @@ input[type=submit]:hover
     .portrait {height: 1000px}
 
     .flex3 {flex-direction: column}
+
+    .txt { top: 20%;}
 }
 
 
@@ -475,12 +478,6 @@ input[type=submit]:hover
 .slider:hover .prev { display: block;}
 .slider:hover .next { display: block;}
 
-
-
-/* @media all and (max-width: 500px)
-{
-    .txt{top: 20%}
-} */
 
 /*
 ################
@@ -557,6 +554,8 @@ input[type=submit]:hover
     .dotsbox { display: none}
     .prev, .next { font-size: 20px}
 }
+
+
 
 @media (pointer: coarse) and (max-width: 450px)
 {
