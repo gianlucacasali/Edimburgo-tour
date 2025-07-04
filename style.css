@@ -340,15 +340,17 @@ input[type=submit]:hover
 
   /* container for sliders */
 .slider {
-    max-height: 50em;
+    
     position: relative;
-    width: 100%;
+    
     /* margin-inline: auto; */
     font-optical-sizing: auto;
     border-radius: var(--border-radius);
     overflow: hidden; /* the rest of the content is invisible */
 
 }
+
+.big_slider {max-height: 50em;}
 
 /* container for actual images */
 
@@ -389,8 +391,6 @@ input[type=submit]:hover
 .flex
 {
     display: flex;
-    flex-wrap: wrap;
-
 }
 
 .col
@@ -409,7 +409,10 @@ input[type=submit]:hover
 
 @media all and (max-width: 820px)
 {
-    .flex { flex-direction: column }
+    .flex 
+    { 
+        flex-direction: column; 
+    }
 }
 
 .txt
