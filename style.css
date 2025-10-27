@@ -933,3 +933,7 @@ article
     .grid_container { grid-template-columns: 1fr }
     .horizontal { grid-column: span 1;}
 }
+
+section {
+    margin-bottom: 2em;
+}
