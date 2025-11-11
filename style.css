@@ -145,7 +145,7 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
      display: flex;
      justify-content: space-between;
      align-items: center;
-     gap: 1em;
+     gap: 3em;
      list-style: none;
      
  }
@@ -155,14 +155,10 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
      padding: 2em 0.5em;
  }
  
- .navbar_container .navbar_menu a,
- input[type=submit]
+ .navbar_container .navbar_menu a
  {
  
      font-size: var(--fs-heading2);
-     padding: 0.3em 1em;
-     border-radius: 25px;
-     transition: all 0.3s ease;
      white-space: nowrap;
      font-weight: var(--fw-bold);
  }
@@ -207,16 +203,16 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
      grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
      justify-content: center;
      position: absolute;
-     top: 160px;
+     top: 150px;
      left: 0;
-     opacity: 1;
-     z-index: 1;
+     z-index: 2;
      width: 100%;
      padding: 1em 4em;
-     background-color: var(--cl-background);
+     background: var(--cl-background);
+     opacity: 1;
      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.458);
-     transition: opacity 0.3s ease; /* Smooth transition */
      list-style: none;
+     border: 3px solid var(--cl-accent);
  }
  
  .navbar_container .navbar_menu .dropdown_menu li
@@ -230,11 +226,9 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
  }
  
  #active,
- .navbar_container .navbar_menu a:hover,
- input[type=submit]:hover
+ .navbar_container .navbar_menu a:hover
  {
-     background: var(--cl-accent);
-     color: white;
+     color: var(--cl-accent);
  }
  
  @media all and (max-width: 820px)
@@ -258,6 +252,7 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
          left: 0;
          background: var(--cl-background);
          box-shadow: 0 30px 20px rgba(0, 0, 0, 0.458);
+         border: 3px solid var(--cl-accent)
      }
  
      .navbar_container .navbar_menu {
@@ -265,13 +260,14 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
          z-index: 2;
          width: 100%;
          left: 0;
-         top: 160px;
+         top: 100px;
          backdrop-filter: blur(10px);
      }
  
      .dropdown:hover .dropdown_menu
      {
          display: none;
+         top: 0;
      }
  
      .navbar_toggle {
@@ -391,11 +387,6 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
     #flex_order { order: -1}
 }
 
-/*
-################
-     TOURs
-################
- */
 
 /*
 ################
@@ -486,8 +477,14 @@ div .book_btn
 .mini_slider_image
 {
     flex: 0 0 auto;         /* none of the items would grow or shrink as the container gets bigger */
-    
 }
+
+@media all and (max-width: 700px)
+{
+    .mini_slider { flex-direction: column;}
+}
+
+
 
 /*
 ################
@@ -549,7 +546,7 @@ div .book_btn
         padding: 0.6em;
         background: transparent;
         font-size: 1.5rem;
-        color: hsl(180, 100%, 25%);
+        color: inherit;
         background: url('./images/opt-images/assets/arrow.png');
         background-size: contain;
         background-repeat: no-repeat;
