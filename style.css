@@ -375,7 +375,7 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
     margin-inline: auto;
 }
 
-.catalog_image:has(.business_card_img) { padding: 2em}
+.catalog_image:has(.business_card_img) { padding: 2em; }
 
 
 @media all and (max-width: 750px)
@@ -386,7 +386,7 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
         padding: 2em 1em;
     }
 
-    .catalog_image { padding: 4em;}
+    /* .catalog_image { padding: 4em;} */
 
     #flex_order { order: -1}
 }
