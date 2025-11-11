@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Edimburgo Tour</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Edimburgo Tour | La Guida</title>
 </head>
 <body>
 <header>
@@ -26,7 +26,7 @@
     <nav class="navbar_container">
         <a class="navbar_logo" href="index.html">
             <!-- <source  media="(min-width:750px)" srcset="./images/opt-images/logos-opt/edimburgotour-logo.png"> -->
-            <img src="./images/opt-images/logos-opt/edimburgotour-logo.png" alt="Edimburgo Tour Logo">
+            <img src="../images/opt-images/logos-opt/edimburgotour-logo.png" alt="Edimburgo Tour Logo">
         </a>
         <button class="navbar_toggle" onclick="openNavbar()">
             <span class="bar"></span>
@@ -50,40 +50,59 @@
             </li>
             <li><a href="itinerary.html">Itinerari</a></li>
             <li><a href="galleria.html">Galleria</a></li>
-            <li><a id="active" href="about.html">La Guida</a></li>
+            <li><a id="active" href="la-guida.html">La Guida</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <div class="paragraph_container" style="background-image: url('../images/others/double-quote.png'); background-position: top left; background-repeat: no-repeat; background-size: 50px 50px;">
-        <h2>Chi sono? Una guida… o una strega mancata?</h2>
-        <p>Ciao! Sono Alessandra Gabbi, la tua guida turistica a Edimburgo!</p>
-        <p>Dal 2016 vivo in questa città magica, e da allora non ho mai smesso di innamorarmi delle sue strade, della sua storia… e del suo meteo imprevedibile (preparatevi, qua il sole è timido e la pioggia è fin troppo socievole!). Da buona appassionata di magia, il mio primo tour è stato dedicato a Harry Potter (Serpeverde a rapporto!), ma tranquilli: non mi limito a bacchette e incantesimi. Ho tantissimi tour, tutti diversi e pieni di storie incredibili che vi faranno vedere Edimburgo con occhi nuovi.</p>
-    </div>
-    <div class="paragraph_container" style="background-image: url('../images/others/double-quote-inverted.png'); background-position: bottom right; background-repeat: no-repeat; background-size: 50px 50px;">
-        <h2>Pronti a scoprire la Scozia (e a innamorarsene)?</h2>
-        <p>Ma non finisce qui: se volete andare oltre Edimburgo, sono pronta a farvi esplorare il resto della Scozia. Vi porterò tra paesaggi mozzafiato, castelli, storie di battaglie epiche e leggende di fantasmi che vi faranno venire i brividi… di entusiasmo, ovviamente! E sappiatelo: non solo vi innamorerete di questa terra, ma magari anche un po’ di me. Succede, non giudico.</p>
-        <p>Quindi, che dite? Vi va di vivere un’avventura unica, divertente e con una guida che ama il suo lavoro (forse pure troppo)? Non vedo l’ora di conoscervi e di farvi scoprire questa meravigliosa terra!
-        </p>
-        <p>Perché scegliere Edimburgo Tour? Perché con me non farete il classico tour "cammina e ascolta". Io mi diverto tanto quanto voi (forse anche di più), vi racconto aneddoti che non trovate sui libri e vi porto a scoprire gli angoli più belli e misteriosi di questa città. Per me, ogni tour è un mix di cultura, risate e magia… e vi assicuro che alla noia è stato già vietato l’accesso!</p>
-        <br>
-        <p><a href="#mailto">Hai una domanda? Scrivimi <i class="fa-solid fa-arrow-right"></i></a></p>
-    </div>
-    <div class="slider flex" id="extra_margin">
-        <div class="col">
-            <img src="./images/opt-images/gallery-opt/guide-pit-vertical-opt.jpg" alt="image of Alessandra Gabbi" style="border-radius: 20px;">
+    <div class="background_color_secondary">
+        <div class="catalog_container">
+            <div class="catalog_paragraph">
+                <h2>Chi sono? Una guida… o una strega mancata?</h2>
+                <p>Ciao! Sono Alessandra Gabbi, la tua guida turistica a Edimburgo!</p>
+                <p>Dal 2016 vivo in questa città magica, e da allora non ho mai smesso di innamorarmi delle sue strade, della sua storia… e del suo meteo imprevedibile (preparatevi, qua il sole è timido e la pioggia è fin troppo socievole!). Da buona appassionata di magia, il mio primo tour è stato dedicato a Harry Potter (Serpeverde a rapporto!), ma tranquilli: non mi limito a bacchette e incantesimi. Ho tantissimi tour, tutti diversi e pieni di storie incredibili che vi faranno vedere Edimburgo con occhi nuovi.</p>
+             </div>
+            <div class="catalog_image">
+                <img src="../images/opt-images/gallery-opt/guide-pit-vertical-opt.jpg" alt="image of Alessandra Gabbi">
+            </div>
         </div>
-        <div class="col">
-            <img src="./images/opt-images/gallery-opt/guide-duke-vertical.jpg" alt="image of Alessandra Gabbi" style="border-radius: 20px;">
+    </div>
+
+    <div class="background_color_secondary">
+        <div class="catalog_container">
+            
+            <div class="catalog_image">
+                <img src="../images/opt-images/gallery-opt/guide-driver-vertical.jpg" alt="image of Alessandra Gabbi">
+            </div>
+            <div class="catalog_paragraph" id="flex_order">
+                <h2>Pronti a scoprire la Scozia (e a innamorarsene)?</h2>
+                <p>Ma non finisce qui: se volete andare oltre Edimburgo, sono pronta a farvi esplorare il resto della Scozia. Vi porterò tra paesaggi mozzafiato, castelli, storie di battaglie epiche e leggende di fantasmi che vi faranno venire i brividi… di entusiasmo, ovviamente! E sappiatelo: non solo vi innamorerete di questa terra, ma magari anche un po’ di me. Succede, non giudico.</p>
+                <br>
+                <a href="tours.html">Scopri i tour <i class="fa-solid fa-arrow-right"></i></a>
+
+            </div>
         </div>
-        <div class="col">
-            <img src="./images/opt-images/gallery-opt/guide-driver-vertical.jpg" alt="image of Alessandra Gabbi" style="border-radius: 20px;">
+    </div>
+
+    <div class="background_color_secondary">
+        <div class="catalog_container">
+            <div class="catalog_paragraph">
+                <h2>Pronti a scoprire la Scozia (e a innamorarsene)?</h2><p>Quindi, che dite? Vi va di vivere un’avventura unica, divertente e con una guida che ama il suo lavoro (forse pure troppo)? Non vedo l’ora di conoscervi e di farvi scoprire questa meravigliosa terra!
+                </p>
+                <p>Perché scegliere Edimburgo Tour? Perché con me non farete il classico tour "cammina e ascolta". Io mi diverto tanto quanto voi (forse anche di più), vi racconto aneddoti che non trovate sui libri e vi porto a scoprire gli angoli più belli e misteriosi di questa città. Per me, ogni tour è un mix di cultura, risate e magia… e vi assicuro che alla noia è stato già vietato l’accesso!</p>
+                <br>
+                <a href="#mailto">Hai una domanda? Scrivimi <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+                <div class="catalog_image">
+                    <img src="../images/opt-images/gallery-opt/guide-duke-vertical.jpg" alt="image of Alessandra Gabbi">
+                </div>
+            
         </div>
     </div>
 </main>
 <footer>
     <div class="logo">
-        <img src="./images/opt-images/logos-opt/edinburgh-submark-100px.png" alt="image of Edimburgo Tour Logo">
+        <img src="../images/opt-images/logos-opt/edinburgh-submark-100px.png" alt="image of Edimburgo Tour Logo">
     </div>
     <div class="footer_container">
         <div>
@@ -107,8 +126,8 @@
     <div style="text-align: center; color: darkgrey; margin-top: 2em; padding: 1em;">
         <p>Edimburgo Tour Ltd  è registrato in Scozia con numero di registrazione SC774216.</p>
         <p>Ufficio registrato: 24 Magdalene Drive EH15 3EE.</p>
-        <p>Website designed by <i>Gianluca Casali.</i></p>
-        <p>Photographes courtesy of <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
+        <p>Site credits:<i>Gianluca Casali.</i></p>
+        <p>Photographes credits: <a style="color: darkgrey" href="https://www.instagram.com/patrickb.ph?igsh=dm01YnJ0azN4ZDY="><i>Patrick Baldassari </i><i class="fa-solid fa-arrow-right"></i></a></p>
     </div>
 </footer>
 <script src="index.js"></script>
