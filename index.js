@@ -28,6 +28,7 @@ document.addEventListener('click', function(e){
     let target = parent.querySelector('.itinerary_description') // select the child with the specified class
     target.classList.toggle('hide') // toggle the class open-faw
     e.target.classList.toggle('rotated')
+    console.log(target)
 })
 
 

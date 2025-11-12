@@ -526,7 +526,13 @@ div .book_btn
     border: 1px solid var(--cl-accent);
 }
 
-.itinerary_btn {display: none;}
+.form button
+{
+    
+}
+
+.itinerary_btn_white,
+.itinerary_btn_accent {display: none;}
 
 @media all and (max-width: 600px)
 {
@@ -540,13 +546,27 @@ div .book_btn
         align-items: center; */
     }
 
-    .itinerary_btn
+    .itinerary_btn_white
     {
         display: block;
         padding: 0.6em;
         background: transparent;
         font-size: 1.5rem;
-        color: inherit;
+        background: url('./images/opt-images/assets/arrow-white.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: inline-end;
+        margin-inline-start: 1em;
+        border: none;
+
+    }
+
+    .itinerary_btn_accent
+    {
+        display: block;
+        padding: 0.6em;
+        background: transparent;
+        font-size: 1.5rem;
         background: url('./images/opt-images/assets/arrow.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -577,6 +597,7 @@ div .book_btn
     {
         transform: rotate(180deg);
     }
+    
 }
 
 /*
