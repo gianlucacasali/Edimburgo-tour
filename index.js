@@ -22,6 +22,7 @@ function closeTours()
     dropdownMenu.classList.toggle('openTours')
 }
 
+
 document.addEventListener('click', function(e){
     let id = e.target.getAttribute('data-itinerary'); // target the attribute name of the element where the click has appeaned
     let parent = document.getElementById(id) // get the parent of the element clicked, id will match with attribute

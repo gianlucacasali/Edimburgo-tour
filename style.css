@@ -236,9 +236,10 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
      .navbar_container {flex-direction: row}
  
      .navbar_container .navbar_menu li 
- {
-     padding: 0.5rem 0.5rem;
- }
+    {
+        padding: 0.5rem 0.5rem;
+        
+    }
  
      .navbar_container .navbar_menu,
      .navbar_container .dropdown_menu
@@ -364,10 +365,11 @@ a:hover { border-bottom: 2px solid var(--cl-background) }
 {
     flex: 1 0 50%;
     height: 800px;
+    padding: 1em 0;
 }
 
 .catalog_image img {
-    max-width: 800px;
+    max-width: 500px;
     margin-inline: auto;
 }
 
