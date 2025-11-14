@@ -457,6 +457,8 @@ input[type=submit]
 {
     color: #FFF;
     background-color: var(--cl-accent-third);
+    border: 3px solid var(--cl-accent-third);
+
 }
 
 
