@@ -36,10 +36,12 @@
             <ul class="navbar_menu">
                 <li><a id="active"  href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="tours.html">Tour</a>
-                    <button class="tour_toggle" onclick="openTours()"><i class="fa-solid fa-circle-plus"></i></button>
-                    <ul class="dropdown_menu" id="dropdownMenu">
-                        <button class="tour_toggle" onclick="closeTours()"><i class="fa-solid fa-circle-minus"></i></button>
+                    <div style="display: flex; gap: 0.5em;">
+                        <a href="tours.html">Tour</a>
+                        <button id="tour_toggle" class="tour_toggle" onclick="openTours()"></button>
+                    </div>
+                    
+                    <ul class="dropdown_menu" id="dropdownMenu"></button>
                         <li><a href="tour-castello.html">Tour del Castello</a></li>
                         <li><a href="tour-classico.html">Tour Classico</a></li>
                         <li><a href="tour-fantasmi.html">Tour dei Fantasmi</a></li>

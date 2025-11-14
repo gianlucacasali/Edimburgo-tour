@@ -3,6 +3,7 @@
 const navbarToggle = document.querySelector('.navbar_toggle')
 const navbarMenu = document.querySelector('.navbar_menu')
 const dropdownMenu = document.querySelector('.dropdown_menu')
+const tourToggle = document.querySelector('.tour_toggle')
 
 function openNavbar()
 {
@@ -15,6 +16,8 @@ function openNavbar()
 function openTours()
 {
     dropdownMenu.classList.toggle('openTours')
+    tourToggle.classList.toggle('rotated')
+
 }
 
 function closeTours()
