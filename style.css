@@ -122,6 +122,11 @@ header
     margin: 6rem 0 4rem;
 }
 
+.navbar_logo
+{
+    padding: 0 0.5em;
+}
+
 .shortcut_contacts
 {
     display: inline-block;
