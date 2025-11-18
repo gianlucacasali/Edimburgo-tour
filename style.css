@@ -122,7 +122,7 @@ header
     margin: 6rem 0 4rem;
 }
 
-.shortcuts
+.shortcut_container
 {
     display: inline-block;
     position: absolute;
@@ -280,9 +280,10 @@ header
     .navbar_container .navbar_menu li
     {
         text-align: center;
+        border-bottom: 0.1em solid var(--cl-accent-lighter)
     }
 
-    .navbar_container .navbar_menu li a {padding: 0.5em 1em;}
+    .navbar_container .navbar_menu li a {padding: 0.5em 1em; }
 
     .navbar_container .navbar_menu .dropdown div a { padding-right: 0.2em}
 
