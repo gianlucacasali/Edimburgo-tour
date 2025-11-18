@@ -104,6 +104,9 @@ main a:hover i
     to {transform: translateX(-3px);}
 }
 
+button:hover,
+a:hover {cursor: pointer;}
+
 /* main a:hover { border-bottom: 2px solid var(--cl-accent) } */
 
 /*
@@ -113,41 +116,43 @@ main a:hover i
  */
 
  
- header
- {
-     display: flex;
-     margin: 6rem 0 4rem;
- }
- 
- .shortcut_contacts
- {
+header
+{
+    display: flex;
+    margin: 6rem 0 4rem;
+}
+
+.shortcuts
+{
     display: inline-block;
-     position: absolute;
-     top: 2em;
-     right:2em;
- }
+    position: absolute;
+    top: 2em;
+    right:2em;
+}
  
- .lang_btn
- {
+.lang_btn
+{
+    padding: 0.3em;
     border: none;
     font-size: var(--fs-heading2);
- }
+    background: var(--cl-background);
+}
 
- .lang_btn .lang_btn_active
- {
-    border: 2px solid var(--cl-accent);
- }
+.shortcuts .lang_btn_active
+{
+    background: var(--cl-accent-lighter);
+}
  
- .navbar_container /* contains logo, toggle and menu (links)  */
- {
-     display: flex;
-     flex-direction: column;
-     align-items: center; /* cross-axis */
-     justify-content:space-around; /* main-axis*/
-     position: relative;
-     gap: 2em;
-     width: 100%;
- }
+.navbar_container /* contains logo, toggle and menu (links)  */
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* cross-axis */
+    justify-content:space-around; /* main-axis*/
+    position: relative;
+    gap: 2em;
+    width: 100%;
+}
  
  .navbar_container .navbar_menu
  {
@@ -316,6 +321,62 @@ main a:hover i
     }
 }
  
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-btn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-top: 6px;
+  z-index: 20;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background .2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.flag {
+  font-size: 1.3rem;
+}
+
+/* Highlight active (current) language 
+.dropdown-item.active {
+  background-color: #e0eaff;
+  font-weight: bold;
+  border-left: 4px solid #4a74ff;
+} */
+
+
  
  /*
  ################
@@ -556,7 +617,7 @@ input[type=submit]
 
 @media all and (max-width: 600px)
 {
-    button:hover {cursor: pointer;}
+    
 
     .itinerary_header
     {
