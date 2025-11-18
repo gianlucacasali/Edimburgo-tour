@@ -94,9 +94,9 @@ input[type=submit]
 }
 
 
-main a i
+main a:hover i
 {
-animation: animate 0.6s linear infinite alternate;
+    animation: animate 0.6s linear infinite alternate;
 }
 
 @keyframes animate {
@@ -104,7 +104,7 @@ animation: animate 0.6s linear infinite alternate;
     to {transform: translateX(-3px);}
 }
 
-main a:hover { border-bottom: 2px solid var(--cl-background) }
+/* main a:hover { border-bottom: 2px solid var(--cl-accent) } */
 
 /*
 ################
@@ -340,6 +340,9 @@ main a:hover { border-bottom: 2px solid var(--cl-background) }
 .background_color_primary h1,
 .background_color_primary h2,
 .background_color_secondary h2 { color: inherit;}
+/* 
+.background_color_primary a:hover
+.background_color_secondary a:hover { border-bottom: 2px solid var(--cl-background); } */
 
 
 .background_color_secondary 
