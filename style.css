@@ -541,6 +541,7 @@ input[type=submit]
     gap: 10px;
     overflow-x: auto;
     margin: 4rem 0;
+    max-height: 600px;
 }
 
 .mini_slider_image

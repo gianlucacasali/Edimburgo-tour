@@ -26,33 +26,33 @@ function closeTours()
 }
 
 // Toggle dropdown on click
-document.getElementById("langDropdownToggle").addEventListener("click", function() {
-    document.getElementById("langDropdownMenu").classList.toggle("show");
-  });
+// document.getElementById("langDropdownToggle").addEventListener("click", function() {
+//     document.getElementById("langDropdownMenu").classList.toggle("show");
+//   });
 
-  // Close dropdown when clicking outside
-  document.addEventListener("click", function(e) {
-    if (!document.querySelector(".lang_dropdown").contains(e.target)) {
-      document.getElementById("langDropdownMenu").classList.remove("show");
-    }
-  });
+//   // Close dropdown when clicking outside
+//   document.addEventListener("click", function(e) {
+//     if (!document.querySelector(".lang_dropdown").contains(e.target)) {
+//       document.getElementById("langDropdownMenu").classList.remove("show");
+//     }
+//   });
 
-  // Highlight current language
-  function highlightCurrentLanguage() {
-    const current = localStorage.getItem("lang");
-    if (!current) return;
+//   // Highlight current language
+//   function highlightCurrentLanguage() {
+//     const current = localStorage.getItem("lang");
+//     if (!current) return;
 
-    document.querySelectorAll(".lang_dropdown_item").forEach(item => {
-      item.classList.toggle("active", item.dataset.lang === current);
-    });
-  }
+//     document.querySelectorAll(".lang_dropdown_item").forEach(item => {
+//       item.classList.toggle("active", item.dataset.lang === current);
+//     });
+//   }
 
-  // Handle click on a language option
-  function switchLanguage(langCode) {
-    localStorage.setItem("lang", langCode);
-  }
+//   // Handle click on a language option
+//   function switchLanguage(langCode) {
+//     localStorage.setItem("lang", langCode);
+//   }
 
-  highlightCurrentLanguage();
+//   highlightCurrentLanguage();
 
 
 document.addEventListener('click', function(e){
