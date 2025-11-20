@@ -11,10 +11,10 @@
     --cl-background: hsl(15,33%,98%) ;
     --cl-primary: hsl(9, 100%, 94%);
     --cl-accent: hsl(180, 100%, 25%);
-        --cl-accent-lighter: hsla(180, 63%, 34%, 0.487);
-        --cl-accent-second: #622d54b4;
-        --cl-accent-third: #998b43;
-        --cl-accent-fourth: #1a552b;
+    --cl-accent-lighter: hsla(180, 63%, 34%, 0.487);
+    --cl-accent-second: #622d54b4;
+    --cl-accent-third: #998b43;
+    --cl-accent-fourth: #1a552b;
 
     /* --cl-accent-lighter: hsl(238, 42%, 70%); */
 
