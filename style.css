@@ -129,23 +129,10 @@ header
 
 .shortcut_contacts
 {
-    display: inline-block;
+    display: block;
     position: absolute;
-    top: 2em;
-    right:2em;
-}
- 
-.lang_btn
-{
-    padding: 0.3em;
-    border: none;
-    font-size: var(--fs-heading2);
-    background: var(--cl-background);
-}
-
-.shortcuts .lang_btn_active
-{
-    background: var(--cl-accent-lighter);
+    top: 0.5em;
+    right: 0.5em;
 }
  
 .navbar_container /* contains logo, toggle and menu (links)  */
@@ -334,7 +321,7 @@ header
 }
 
 .lang_dropdown_btn {
-  padding: 0.5em 1em;
+  padding: 0.3em 0.8em;
   font-size: var(--fs-body);
   border: 1px solid var(--cl-accent-lighter);
   border-radius: var(--border-radius);
@@ -359,7 +346,7 @@ header
 }
 
 .lang_dropdown_item {
-  padding: 0.5em 1em;
+  padding: 0.3em 0.8em;
   cursor: pointer;
   display: flex;
   align-items: center;
