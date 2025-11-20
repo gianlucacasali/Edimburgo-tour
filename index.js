@@ -48,9 +48,8 @@ document.getElementById("langDropdownToggle").addEventListener("click", function
   }
 
   // Handle click on a language option
-  function switchLanguage(url, langCode) {
+  function switchLanguage(langCode) {
     localStorage.setItem("lang", langCode);
-    window.open(url, _self);
   }
 
   highlightCurrentLanguage();
