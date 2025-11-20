@@ -25,35 +25,35 @@ function closeTours()
     dropdownMenu.classList.toggle('openTours')
 }
 
-// // Toggle dropdown on click
-// document.getElementById("dropdownToggle").addEventListener("click", function() {
-//     document.getElementById("dropdownMenu").classList.toggle("show");
-//   });
+// Toggle dropdown on click
+document.getElementById("langDropdownToggle").addEventListener("click", function() {
+    document.getElementById("langDropdownMenu").classList.toggle("show");
+  });
 
-//   // Close dropdown when clicking outside
-//   document.addEventListener("click", function(e) {
-//     if (!document.querySelector(".dropdown").contains(e.target)) {
-//       document.getElementById("dropdownMenu").classList.remove("show");
-//     }
-//   });
+  // Close dropdown when clicking outside
+  document.addEventListener("click", function(e) {
+    if (!document.querySelector(".lang_dropdown").contains(e.target)) {
+      document.getElementById("langDropdownMenu").classList.remove("show");
+    }
+  });
 
-//   // Highlight current language
-//   function highlightCurrentLanguage() {
-//     const current = localStorage.getItem("lang");
-//     if (!current) return;
+  // Highlight current language
+  function highlightCurrentLanguage() {
+    const current = localStorage.getItem("lang");
+    if (!current) return;
 
-//     document.querySelectorAll(".dropdown-item").forEach(item => {
-//       item.classList.toggle("active", item.dataset.lang === current);
-//     });
-//   }
+    document.querySelectorAll(".lang_dropdown_item").forEach(item => {
+      item.classList.toggle("active", item.dataset.lang === current);
+    });
+  }
 
-//   // Handle click on a language option
-//   function switchLanguage(url, langCode) {
-//     localStorage.setItem("lang", langCode);
-//     window.location.href = url;
-//   }
+  // Handle click on a language option
+  function switchLanguage(url, langCode) {
+    localStorage.setItem("lang", langCode);
+    window.location.href = url;
+  }
 
-//   highlightCurrentLanguage();
+  highlightCurrentLanguage();
 
 
 document.addEventListener('click', function(e){
