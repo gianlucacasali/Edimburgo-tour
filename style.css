@@ -131,8 +131,8 @@ header
 {
     display: block;
     position: absolute;
-    top: 0.8em;
-    right: 0.5em;
+    top: 1em;
+    right: 1em;
 }
  
 .navbar_container /* contains logo, toggle and menu (links)  */
