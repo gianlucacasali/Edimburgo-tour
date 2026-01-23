@@ -13,7 +13,7 @@
     --cl-accent: hsl(180, 100%, 25%);
     --cl-accent-lighter: hsla(180, 63%, 34%, 0.487);
     --cl-accent-second: #622d54b4;
-    --cl-accent-third: #998b43;
+    --cl-accent-third: #aa931f;
     --cl-accent-fourth: #1a552b;
 
     /* --cl-accent-lighter: hsl(238, 42%, 70%); */
@@ -23,9 +23,9 @@
     --fw-regular: 550;
     --fw-bold: 700;
 
-    --fs-heading1: 2rem;
-    --fs-heading2: 1.5rem;
-    --fs-body: 1.2rem;
+    --fs-heading1: 3rem;
+    --fs-heading2: 2rem;
+    --fs-body: 1.3rem;
 
     --letter-spacing: 1.2px;
 
@@ -211,7 +211,7 @@ header
  .navbar_container .navbar_menu a
  {
  
-     font-size: var(--fs-heading2);
+     font-size: var(--fs-body);
      white-space: nowrap;
      font-weight: var(--fw-bold);
      display: block;
@@ -972,7 +972,7 @@ article
 
 
 
-@media (pointer: coarse) and (max-width: 450px)
+@media (pointer: coarse)
 {
     .slider:has(.fade) img { opacity: 0.3}
     .prev,
